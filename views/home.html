@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Tipografria ROBOTO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Libreria Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- Estilos propios -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- SECCION PRINCIPAL -->
+    <main>
+        <section>
+            <article>
+                <!-- SECCION PASOS 1 al 5 -->
+                <div> 
+                    <p>Buscá</p>
+                    <i class="fa-regular fa-circle-1"></i>
+                </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                <div> 
+                    <p>Elegí</p>
+                    <i class="fa-regular fa-circle-2"></i>
+                </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                <div> 
+                    <p>Solicitá</p>
+                    <i class="fa-regular fa-circle-3"></i>
+                </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                <div> 
+                    <p>Pagá</p>
+                    <i class="fa-regular fa-circle-4"></i>
+                </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                <div> 
+                    <p>Descargá tu póliza</p>
+                    <i class="fa-regular fa-circle-5"></i>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <!-- COTIZADOR -->
+                <div>
+                    <h5>Cotizá tu seguro y emití tu póliza en 5 pasos</h5>
+                    <p>¿Qué actividad realizas?</p>
+                    <select name="activity" id="activity">
+                        <option value="0">Buscár y seleccionar</option>
+                        <option value="1">Actividad 1</option>
+                        <option value="2">Actividad 2</option>
+                        <option value="3">Actividad 3</option>
+                    </select>
+                    <br>
+                    <select name="quantity" id="quantity">
+                        <option value="0">Personas</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <br>
+                    <p>Desde</p>
+                    <input  type="date" name="since" id="since">
+                    <p>Hasta</p>
+                    <input  type="date" name="until" id="until">
+                    <br>
+                    <button type="button" id="quote" name="quote">Quote</button>
+                </div>
+            </article> 
+                <!-- SEPARADOR -->
+                <div>
+                    <i class="fa-light fa-horizontal-rule"></i>
+                </div>
+                <!-- TARJETAS -->
+                <div>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                </div>
+                <!-- SLIDER -->
+                <div>
+                    <div class="slider" id="slider">
+                        <ul class="slides">
+                            <li class="slide" id="slide1">
+                                <a href="#">
+                                <p>Texto 1</p>
+                                <img src="photo1.jpg" alt="photo 1">
+                                </a>
+                            </li>
+                            <li class="slide" id="slide2">
+                                <a href="#">
+                                <p>Texto 2</p>
+                                <img src="photo2.jpg" alt="photo 2">
+                                </a>
+                            </li>
+                            <li class="slide" id="slide3">
+                                <a href="#">
+                                <p>Texto 3</p>
+                                <img src="photo3.jpg" alt="photo 3">
+                            </a>
+                            </li>
+                            <li class="slide" id="slide4">
+                                <a href="#">
+                                <p>Texto 4</p>
+                                <img src="photo4.jpg" alt="photo 4">
+                                </a>
+                            </li>
+                            <li class="slide" id="slide5">
+                                <a href="#">
+                                <p>Texto 5</p>
+                                <img src="photo5.jpg" alt="photo 5">
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a href="#">
+                                <p>Texto 6</p>
+                                <img src="photo1.jpg" alt="photo 1">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="slider-controler">
+                        <li><a href="#slide1">&bullet;</a></li>
+                        <li><a href="#slide2">&bullet;</a></li>
+                        <li><a href="#slide3">&bullet;</a></li>
+                        <li><a href="#slide4">&bullet;</a></li>
+                        <li><a href="#slide5">&bullet;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <!-- DESCRIPCIONES -->
+                <div>
+                    <h4>Descripción 1</h4>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                    <br>
+                    <h4>Descripción 2</h4>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                    <br>
+                    <h4>Descripción 3</h4>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                </div>
+    </main>
+
+</body>
