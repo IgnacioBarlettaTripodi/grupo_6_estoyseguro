@@ -1,0 +1,164 @@
+/* ---ESTILOS PARA EL HEADER ---*/
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #0F2B70;
+    align-items: center;
+}
+
+.login-bar {
+    display: flex;
+    margin-right: 5%;
+}
+
+.login-bar-left {
+    display: flex;
+}
+
+li {
+    margin: 5px;
+    color: aliceblue;
+}
+
+.login-bar-right {
+    display: flex;
+    padding-left: 15px;
+}
+
+.login-bar-right input {
+    border-radius: 5px;
+}
+
+/*--- ESTILOS DEL HOME ---*/
+
+main {
+    background-color: #0F2B70;
+}
+
+.step-1-to-5 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #96A5B6;
+}
+
+.cotizador {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4178B9;
+    align-items:flex-end;
+}
+
+.cotizador p {
+    margin: 0px;
+    text-align: center;
+}
+
+.cotizador div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h5 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.cotizador select, .cotizador input, .cotizador button {
+    border-radius: 5px;
+}
+
+.iconos-tarjetas {
+    text-align: center;
+    margin: 10px
+}
+
+.iconos-tarjetas i {
+    color: white;
+}
+
+.descripciones {
+    display: flex;
+    color: white;
+}
+
+/*--- ESTILOS DEL FORMULARIO DE REGISTRO ---*/
+
+.register-section {
+    background-color:  #0F2B70;
+    padding: 20px;
+}
+
+.register-section div {
+    text-align: center;
+}
+
+.register-section div p {
+    color: white;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-form input,
+.register-button {
+    margin: 10px;
+    padding: 5px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+/*--- ESTILOS DEL FORMULARIO DE LOG-IN ---*/
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-section div {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.login-section{
+    background-color:  #0F2B70;
+}
+
+.login-form input,
+.login-button {
+    margin: 10px;
+    padding: 5px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+/*--- ESTILOS PARA EL FOOTER ---*/
+
+.footer-section-top {
+    display: flex;
+    text-align: center;
+}
+.footer-cards {
+    width: 24%;
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+footer {
+    background-color:  #0F2B70;
+}
+.footer-section-bottom {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}

@@ -20,30 +20,27 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
-
-
 <body>
-    <section class="register-section">
+    <section class="login-section">
         <div>
-            <form action="/register" method="post" class="register-form">
-                <input type="text" name="name" placeholder="Nombre y Apellido o Razón Social">
+            <h3>INGRESAR</h3>
+        </div>
+        <div>
+            <form action="/login" method="post" class="login-form">
                 <input type="number" name="tax" placeholder="CUIT o DNI">
-                <input type="text" name="country" placeholder="País">
-                <input type="number" name="phone&number" placeholder="Teléfono">
                 <input type="email" name="email" placeholder="Correo electrónico">
-                <input type="email" name="email" placeholder="Confirme su correo electrónico">
                 <input type="password" name="password" placeholder="Clave de usuario">
-                <input type="password" name="password" placeholder="Confirme su clave de usuario">
             </form>        
         </div>
         <div>
-            <input type="checkbox" name="term&conditions" value="Acepta términos y condiciones">
-            <p> Acepta términos y condiciones</p>
+            <a href="">Olvide mi contraseña</a>
         </div>
-        <br>
         <div>
-            <button id="submit" type="button" class="register-button">Registrarme</button>
+            <!-- ACA VA EL CAPTCHA  -->
         </div>
-    </section>
+        <div>
+            <button id="submit" type="button" class="login-button">Ingresar</button>
+        </div>
+</section>
 </body>
 </html>

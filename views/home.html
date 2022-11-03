@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- Libreria Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
     <!-- Estilos propios -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -26,13 +26,13 @@
     <!-- SECCION PRINCIPAL -->
     <main>
         <section>
-            <article>
+            <article class="step-1-to-5">
                 <!-- SECCION PASOS 1 al 5 -->
                 <div> 
                     <p>Buscá</p>
                     <i class="fa-regular fa-circle-1"></i>
                 </div>
-                    <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right"></i>                 
                 <div> 
                     <p>Elegí</p>
                     <i class="fa-regular fa-circle-2"></i>
@@ -55,39 +55,46 @@
             </article>
         </section>
         <section>
-            <article>
-                <!-- COTIZADOR -->
-                <div>
-                    <h5>Cotizá tu seguro y emití tu póliza en 5 pasos</h5>
-                    <p>¿Qué actividad realizas?</p>
-                    <select name="activity" id="activity">
-                        <option value="0">Buscár y seleccionar</option>
-                        <option value="1">Actividad 1</option>
-                        <option value="2">Actividad 2</option>
-                        <option value="3">Actividad 3</option>
-                    </select>
+             <!-- COTIZADOR -->
+             <h5>Cotizá tu seguro y emití tu póliza en 5 pasos</h5>
+
+            <article class="cotizador">
+                    <div class="cotizador-actividad">
+                        <p>¿Qué actividad realizas?</p>
+                        <select name="activity" id="activity">
+                            <option value="0">Buscár y seleccionar</option>
+                            <option value="1">Actividad 1</option>
+                            <option value="2">Actividad 2</option>
+                            <option value="3">Actividad 3</option>
+                        </select>
+                    </div>
+                    <div class="cotizador-personas">
+                        <select name="quantity" id="quantity">
+                            <option value="0">Personas</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="cotizador-desde">
+                        <p>Desde</p>
+                        <input  type="date" name="since" id="since">
+                    </div>
+                    <div class="cotizador-hasta">
+                        <p>Hasta</p>
+                        <input  type="date" name="until" id="until">
+                    </div>
                     <br>
-                    <select name="quantity" id="quantity">
-                        <option value="0">Personas</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                    <br>
-                    <p>Desde</p>
-                    <input  type="date" name="since" id="since">
-                    <p>Hasta</p>
-                    <input  type="date" name="until" id="until">
-                    <br>
-                    <button type="button" id="quote" name="quote">Quote</button>
-                </div>
+                    <div class="cotizador-cotizar">
+                        <button type="button" id="quote" name="quote">Quote</button>
+                    </div>
             </article> 
                 <!-- SEPARADOR -->
                 <div>
                     <i class="fa-light fa-horizontal-rule"></i>
                 </div>
                 <!-- TARJETAS -->
-                <div>
+                <div class="iconos-tarjetas">
                     <i class="fa-brands fa-cc-visa"></i>
                     <i class="fa-brands fa-cc-mastercard"></i>
                     <i class="fa-brands fa-cc-paypal"></i>
@@ -146,16 +153,21 @@
                     </div>
                 </div>
             <!-- DESCRIPCIONES -->
-                <div>
-                    <h4>Descripción 1</h4>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
-                    <br>
-                    <h4>Descripción 2</h4>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
-                    <br>
-                    <h4>Descripción 3</h4>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                <div class="descripciones">
+                    <div>
+                        <h4>Descripción 1</h4>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                    </div>
+                    <div>
+                        <h4>Descripción 2</h4>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                    </div>
+                    <div>
+                        <h4>Descripción 3</h4>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                    </div>    
                 </div>
     </main>
 
 </body>
+</html>
