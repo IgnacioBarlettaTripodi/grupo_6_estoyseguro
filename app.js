@@ -28,3 +28,11 @@ app.get('/login', (req, res) => {
 app.get('/footer', (req, res) => {
     res.sendFile(path.resolve(__dirname,"./views/footer.html"))
 })
+
+app.get('/carritodecompra', (req, res) => {
+    res.sendFile(path.resolve(__dirname,"./views/carritodecompra.html"))
+})
+
+app.get('/productdetail', (req, res) => {
+    res.sendFile(path.resolve(__dirname,"./views/productdetail.html"))
+})
