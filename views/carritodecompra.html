@@ -19,42 +19,11 @@
 
 </head>
 <body>
-    <!-- SECCION PRINCIPAL -->
-    <main>
-        <section>
-            <article class="step-1-to-5">
-                <!-- SECCION PASOS 1 al 5 -->
-                <div> 
-                    <p>Buscá</p>
-                    <i class="fa-regular fa-circle-1"></i>
-                </div>
-                <i class="fa-solid fa-arrow-right"></i>                 
-                <div> 
-                    <p>Elegí</p>
-                    <i class="fa-regular fa-circle-2"></i>
-                </div>
-                    <i class="fa-solid fa-arrow-right"></i>
-                <div> 
-                    <p>Solicitá</p>
-                    <i class="fa-regular fa-circle-3"></i>
-                </div>
-                    <i class="fa-solid fa-arrow-right"></i>
-                <div> 
-                    <p>Pagá</p>
-                    <i class="fa-regular fa-circle-4"></i>
-                </div>
-                    <i class="fa-solid fa-arrow-right"></i>
-                <div> 
-                    <p>Descargá tu póliza</p>
-                    <i class="fa-regular fa-circle-5"></i>
-                </div>
-            </article>
-        </section>
-
+        <!-- SECCION PRINCIPAL -->
         <!-- Cotizacion de tu seguro -->
-        <h5>Cotización de tu seguro</h5>
-            <article>
-                Filtros
+            <article class="carrito-filtros">
+                <h5>Cotización de tu seguro</h5>
+                <p>Filtros</p>
                 <div>
                     <select name="Precio" id="Precio">
                         <option value="0">Precio(Mayor o menor)</option>
@@ -87,6 +56,10 @@
                 </div>
             </article>
 
+            
+
+        <!-- Descipciones cartas de coberturas -->
+        <section class="carrito-cards">
             <!-- Nueva Cotizacion -->
             <article class="cotizador">
                 <div class="cotizador-actividad">
@@ -119,10 +92,7 @@
                 <div class="cotizador-cotizar">
                     <button type="button" id="cotizar" name="cotizar">cotizar</button>
                 </div>
-        </article>
-
-        <!-- Descipciones cartas de coberturas -->
-        <section>
+            </article>
             <article>
 
                 <!-- Logo -->
@@ -162,8 +132,7 @@
             </article>
  
              <!-- 2da descripcion de cartas de coberturas -->
-            <section>
-                <article>
+            <article>
     
                     <!-- Logo -->
     
@@ -199,11 +168,10 @@
     
                     <p>Opcion 2</p>
     
-                </article>
+            </article>
 
                 <!-- 3ra descripcion de cartas de coberturas -->
-            <section>
-                <article>
+            <article>
     
                     <!-- Logo -->
     
@@ -239,7 +207,9 @@
     
                     <p>Opcion 3</p>
     
-                </article>
+            </article>
+        </section>
+        <section class="avanzar-retroceder">
 
                 <!--Botones -->
                 <div>
@@ -265,14 +235,7 @@
                 <div>
                     <button type="button" id="siguiente" name="siguiente">Siguiente</button>
                 </div>
-
-
-
         </section>
 
-
-        
-        
-    
 </body>
 </html>
