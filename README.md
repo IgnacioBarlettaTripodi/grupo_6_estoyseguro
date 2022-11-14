@@ -14,3 +14,6 @@ https://www.behance.net/gallery/154553391/Projeto-Site-Inovar-Seguros?tracking_s
 Click seguros:
 https://www.clickseguros.com.ar/?utm_source=google&utm_medium=cpc&utm_campaign=seguros_online&utm_id=seguros&kwd=seguros%20online&gclid=EAIaIQobChMIypSczOzq-gIVWEFIAB2W8As3EAAYAiAAEgKkh_D_BwE
 
+
+Tablero de Trello:
+https://trello.com/invite/b/dGlmvzVd/ATTI4989c9bf0671286f9863d213bfb2c3a771544D99/grupo6
