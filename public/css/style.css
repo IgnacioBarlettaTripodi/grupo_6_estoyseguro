@@ -59,11 +59,10 @@ main {
     display: flex;
     justify-content: space-around;
     background-color: #96A5B6;
+    align-items: center;
+    padding: 20px;
 }
 
-.step-1-to-5 div {
-    margin-top: 10px;
-}
 .cotizador {
     display: flex;
     justify-content: space-around;

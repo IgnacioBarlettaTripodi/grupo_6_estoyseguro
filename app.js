@@ -1,38 +1,17 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 
 let PORT = 3000
 
-const path = require('path');
+let mainRouter = require('./routers/mainRouter')
 
 app.listen(PORT, console.log('Listen on port 3000'));
 
 app.use(express.static("public"));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname,"./views/home.html"))
-})
+app.set('view engine', 'ejs')
 
-app.get('/header', (req, res) => {
-    res.sendFile(path.resolve(__dirname,"./views/header.html"))
-})
+app.use('/', mainRouter)
 
-app.get('/register', (req, res) => {
-    res.sendFile(path.resolve(__dirname,"./views/register.html"))
-})
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.resolve(__dirname,"./views/login.html"))
-})
-
-app.get('/footer', (req, res) => {
-    res.sendFile(path.resolve(__dirname,"./views/footer.html"))
-})
-
-app.get('/carritodecompra', (req, res) => {
-    res.sendFile(path.resolve(__dirname,"./views/carritodecompra.html"))
-})
-
-app.get('/productdetail', (req, res) => {
-    res.sendFile(path.resolve(__dirname,"./views/productdetail.html"))
-})
