@@ -1,17 +1,27 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const mainRouter = require('./routers/mainRouter');
 
-let PORT = 3000
+app.listen (3000, ()=>{
+    console.log('Server Ok')
+});
 
-let mainRouter = require('./routers/mainRouter')
+//app.listen(PORT, console.log('Listen on port 3000'));//
 
-app.listen(PORT, console.log('Listen on port 3000'));
-
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs')
 
 app.use('/', mainRouter)
+
+app.use("/login", mainRouter);
+
+app.use("/register", mainRouter);
+
+app.use("/productdetail", mainRouter);
+
+app.use("/carritodecompra", mainRouter);
+
 
 
