@@ -7,33 +7,27 @@
 
     <main>
         <section>
-            <article class="step-1-to-5">
-                <!-- SECCION PASOS 1 al 5 -->
-                <div> 
-                    <div>Buscá</div>
-                    <i class="fas-regular fa-circle-1"></i>          
-                </div>
-                    <i class="fas fa-arrow-right"></i>  
-                <div> 
-                    <div>Elegí</div>
-                    <i class="fas-regular fa-circle-2"></i>
-                </div>
-                    <i class="fas fa-arrow-right"></i>            
-                <div> 
-                    <div>Solicitá</div>
-                    <i class="fas-regular fa-circle-3"></i>
-                </div>
-                    <i class="fas fa-arrow-right"></i>            
-                <div> 
-                    <div>Pagá</div>
-                    <i class="fas-regular fa-circle-4"></i>
-                </div>
-                    <i class="fas fa-arrow-right"></i>            
-                <div> 
-                    <div>Descargá tu póliza</div>
-                    <i class="fas-regular fa-circle-5"></i>
-                </div>
+            <article>
+                <div class="stepper-wrapper">
+                    <div class="stepper-item completed">
+                      <div class="step-counter">1</div>
+                      <div class="step-name">Buscá</div>
+                    </div>
+                    <div class="stepper-item active">
+                      <div class="step-counter">2</div>
+                      <div class="step-name">Elegí</div>
+                    </div>
+                    <div class="stepper-item active">
+                      <div class="step-counter">3</div>
+                      <div class="step-name">Solicitá</div>
+                    </div>
+                    <div class="stepper-item active">
+                      <div class="step-counter">4</div>
+                      <div class="step-name">Pagá</div>
+                    </div>
+                  </div>
             </article>
+
         </section>
         <section>
              <!-- COTIZADOR -->
@@ -84,55 +78,50 @@
                     <i class="fa-brands fa-cc-diners-club"></i>
                 </div>
                 <!-- SLIDER -->
-                <div>
-                    <div class="slider" id="slider">
-                        <ul class="slides">
-                            <li class="slide" id="slide1">
-                                <a href="#">
-                                <div>Texto 1</div>
-                                <img src="photo1.jpg" alt="photo 1">
-                                </a>
-                            </li>
-                            <li class="slide" id="slide2">
-                                <a href="#">
-                                <div>Texto 2</div>
-                                <img src="photo2.jpg" alt="photo 2">
-                                </a>
-                            </li>
-                            <li class="slide" id="slide3">
-                                <a href="#">
-                                <div>Texto 3</div>
-                                <img src="photo3.jpg" alt="photo 3">
-                            </a>
-                            </li>
-                            <li class="slide" id="slide4">
-                                <a href="#">
-                                <div>Texto 4</div>
-                                <img src="photo4.jpg" alt="photo 4">
-                                </a>
-                            </li>
-                            <li class="slide" id="slide5">
-                                <a href="#">
-                                <div>Texto 5</div>
-                                <img src="photo5.jpg" alt="photo 5">
-                                </a>
-                            </li>
-                            <li class="slide">
-                                <a href="#">
-                                <div>Texto 6</div>
-                                <img src="photo1.jpg" alt="photo 1">
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="slider-controler">
-                        <li><a href="#slide1">&bullet;</a></li>
-                        <li><a href="#slide2">&bullet;</a></li>
-                        <li><a href="#slide3">&bullet;</a></li>
-                        <li><a href="#slide4">&bullet;</a></li>
-                        <li><a href="#slide5">&bullet;</a></li>
-                        </ul>
-                    </div>
+                <div class="container">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="images/sliderphoto1.jpg"></div>
+                          <div class="swiper-slide"><img src="images/sliderphoto2.jpg"></div>
+                          <div class="swiper-slide"><img src="images/life-in.jpg"></div>
+                          <div class="swiper-slide"><img src="images/slider-bg.jpg"></div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
                 </div>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+                <script>
+                    const swiper = new Swiper('.swiper', {
+                    // Optional parameters
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                      el: '.swiper-pagination',
+                      clickable: true,
+                    },
+                
+                    // Navigation arrows
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
+                    });
+                </script>
+
             <!-- DESCRIPCIONES -->
                 <div class="descripciones">
                     <div>

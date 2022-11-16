@@ -21,11 +21,8 @@ p {
     margin-right: 5%;
     align-items: center;
 }
-.login-bar-right button {
-    padding: 0 35px;
-    height: 55px;
-    line-height: 55px;
-    margin: 5px;
+.login-bar-right div {
+    margin: 0px 10px
 }
 
 .login-bar-left {
@@ -49,19 +46,113 @@ li {
     border-radius: 5px;
 }
 
+.login-bar a {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background: #2ca2fb;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    padding: 0 50px;
+    border-radius: 91px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: none;
+
+}
+
+.login-bar a:hover{
+    background-color: #fcaf3d;
+    text-decoration: none;
+}
+
 /*--- ESTILOS DEL HOME ---*/
 
 main {
     background-color: #000e29;
 }
 
-.step-1-to-5 {
+.stepper-wrapper {
+    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
-    background-color: #96A5B6;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
+    flex: 1;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: #4bb543;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+.step-name{
+    color: white;
 }
+
+
 
 .cotizador {
     display: flex;
@@ -71,6 +162,7 @@ main {
 }
 .cotizador button {
     margin-bottom: 15px;
+
 }
 
 
@@ -113,6 +205,24 @@ h5 {
     color: white;
 }
 
+
+/*--- ESTILOS PARA EL SLIDER DEL HOME ---*/
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img {
+    width: 100%;
+}
+
+
 /*--- ESTILOS DEL FORMULARIO DE REGISTRO ---*/
 
 .register-section {
@@ -147,7 +257,7 @@ input {
 }
 
 
-button{
+button {
     display: inline-block;
     font-size: 15px;
     font-weight: 700;
@@ -196,6 +306,7 @@ button:hover{
 
 .login-section{
     background-color:  #000e29;
+    
 }
 
 
