@@ -7,8 +7,6 @@ app.listen (3000, ()=>{
     console.log('Server Ok')
 });
 
-//app.listen(PORT, console.log('Listen on port 3000'));//
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs')

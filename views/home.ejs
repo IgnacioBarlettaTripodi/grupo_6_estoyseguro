@@ -6,6 +6,7 @@
 <%- include('./partials/header') %>
 
     <main>
+        <!--STEPPER-->
         <section>
             <article>
                 <div class="stepper-wrapper">
@@ -27,42 +28,33 @@
                     </div>
                   </div>
             </article>
-
         </section>
+
         <section>
              <!-- COTIZADOR -->
-             <h5>Cotizá tu seguro y emití tu póliza en 5 pasos</h5>
-
+            
             <article class="cotizador">
-                    <div class="cotizador-actividad">
-                        <div>¿Qué actividad realizas?</div>
-                        <select name="activity" id="activity">
-                            <option value="0">Buscár y seleccionar</option>
+            <h5>Cotizá tu seguro y emití tu póliza en 4 pasos</h5>
+            <div class="cotizador-options">
+                <form> 
+                    <select name="activity" id="activity">
+                            <option value="0">Seleccioná tu actividad</option>
                             <option value="1">Actividad 1</option>
                             <option value="2">Actividad 2</option>
                             <option value="3">Actividad 3</option>
-                        </select>
-                    </div>
-                    <div class="cotizador-personas">
-                        <select name="quantity" id="quantity">
+                    </select>
+                    <select name="quantity" id="quantity">
                             <option value="0">Personas</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="cotizador-desde">
-                        <div>Desde</div>
-                        <input  type="date" name="since" id="since">
-                    </div>
-                    <div class="cotizador-hasta">
-                        <div>Hasta</div>
-                        <input  type="date" name="until" id="until">
-                    </div>
-                    <br>
-                    <div class="cotizador-cotizar">
-                        <button type="button" id="quote" name="quote">Quote</button>
-                    </div>
+                    </select>
+                        <input type="date" name="since" id="since">
+                </form>
+            </div>
+            <div class="cotizador-button">
+                    <button type="button" id="quote" name="quote">COTIZAR</button>
+             </div>
             </article> 
                 <!-- SEPARADOR -->
                 <div>
@@ -88,7 +80,6 @@
                           <div class="swiper-slide"><img src="images/sliderphoto2.jpg"></div>
                           <div class="swiper-slide"><img src="images/life-in.jpg"></div>
                           <div class="swiper-slide"><img src="images/slider-bg.jpg"></div>
-
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>
@@ -121,7 +112,17 @@
                     },
                     });
                 </script>
-
+            <!--TARJETAS DE PRODUCTOS-->
+           <div class= "container">
+                <div class="card">
+                    <figure>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Automoviles</h3>
+                        <a href="#">Leer Más</a>
+                    </div>
+                </div>
+            </div>        
             <!-- DESCRIPCIONES -->
                 <div class="descripciones">
                     <div>

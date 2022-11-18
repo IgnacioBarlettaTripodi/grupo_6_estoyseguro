@@ -2,71 +2,52 @@
 body {
     background-color:  #000e29;
 }
-.logo {
-    width: 125px;
-    margin-left: 35px;
-}
-.main-header {
+
+.top-header {
     display: flex;
     justify-content: space-between;
-    background-color:  #000e29;
+    background-color:  #0a2458;
     align-items: center;
+    width: 100%;
 }
+
 p {
     color: white;
 }
 
-.login-bar {
+.logo {
+    width: 150px;
+    margin-left: 15px;
+}
+
+.login-seccion{
     display: flex;
-    margin-right: 5%;
     align-items: center;
-}
-.login-bar-right div {
-    margin: 0px 10px
+    justify-content: flex-end;
 }
 
-.login-bar-left {
-    display: flex;
-    margin-bottom: 0px;
+.login-button {
+	background-color:#2ca1fb;
+	border-radius:28px;
+	border:0px solid #fcb03d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:10px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    margin: 4px;
+}
+.login-button:hover {
+	background-color:#fcb03d;
+}
+.login-button:active {
+	position:relative;
+	top:1px;
 }
 
-li {
-    font-weight: 500;
-    text-transform: uppercase;
-    margin: 5px;
-    color: aliceblue;
-}
-
-.login-bar-right {
-    display: flex;
-    padding-left: 15px;
-}
-
-.login-bar-right input {
-    border-radius: 5px;
-}
-
-.login-bar a {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 700;
-    color: white;
-    background: #2ca2fb;
-    height: 65px;
-    line-height: 65px;
-    text-align: center;
-    padding: 0 50px;
-    border-radius: 91px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    border: none;
-
-}
-
-.login-bar a:hover{
-    background-color: #fcaf3d;
-    text-decoration: none;
-}
 
 /*--- ESTILOS DEL HOME ---*/
 
@@ -152,35 +133,29 @@ main {
     color: white;
 }
 
-
-
 .cotizador {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: space-around;
     background-color: #4178B9;
     align-items:flex-end;
-}
-.cotizador button {
-    margin-bottom: 15px;
-
-}
-
-
-.cotizador div {
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-h5 {
-    text-align: center;
-    padding: 10px;
-    color: white;
-}
-.cotizador input {
+    align-items: center;
     width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.cotizador form{
+    display: flex;
+    flex: auto;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .cotizador select {
-    width: 100%;
+    width: 30%;
     height: 60px;
     font-size: 15px;
     color: #000e29;
@@ -189,6 +164,49 @@ h5 {
     border-radius: 10px;
     margin-bottom: 15px;
     padding: 0px 20px;
+    margin: 4px;
+}
+.cotizador input {
+    width: 30%;
+    height: 60px;
+    font-size: 15px;
+    color: #000e29;
+    border: 1px solid #EFF1F6;
+    background-color:white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 0px 20px;
+    margin: 4px;
+}
+
+.cotizador-button {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        background: #2ca2fb;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        padding: 0 0px;
+        border-radius: 91px;
+        text-transform: uppercase;
+        transition: 0.3s;
+        border: none;
+}
+.cotizador-button:hover {
+	background-color:#fcb03d;
+}
+
+.cotizador-button:active {
+	position:relative;
+	top:1px;
+}
+
+h5 {
+    text-align: center;
+    padding: 10px;
+    color: white;
 }
 
 .iconos-tarjetas {
@@ -205,7 +223,6 @@ h5 {
     color: white;
 }
 
-
 /*--- ESTILOS PARA EL SLIDER DEL HOME ---*/
 
 .container {
@@ -215,13 +232,37 @@ h5 {
     justify-content: center;
 }
 .swiper{
-    width: 80%;
+    width: 100%;
     height: fit-content;
 }
 .swiper-slide img {
     width: 100%;
 }
 
+/*--- ESTILOS DE LAS TARJETAS ---*/
+
+.container {
+    display: flex;
+    width:100%;
+    max-width:500px
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0px 1px 10px rgba (0,0,0,0.2);
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba (0,0,0,0.4)
+
+}
 
 /*--- ESTILOS DEL FORMULARIO DE REGISTRO ---*/
 
@@ -289,6 +330,12 @@ button:hover{
     background-color: #fcaf3d;
 }
 
+.descripciones{
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 /*--- ESTILOS DEL FORMULARIO DE LOG-IN ---*/
 
@@ -309,16 +356,17 @@ button:hover{
     
 }
 
-
-
 /*--- ESTILOS PARA EL FOOTER ---*/
 
 .footer-section-top {
     display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .footer-cards {
-    width: 24%;
+    width: 90%;
     color: white;
     border: solid 2px white;
     border-radius: 5px;
