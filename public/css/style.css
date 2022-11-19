@@ -1,12 +1,12 @@
 /* ---ESTILOS PARA EL HEADER ---*/
 body {
-    background-color:  #000e29;
+    background-color:  #fff;
 }
 
 .top-header {
     display: flex;
     justify-content: space-between;
-    background-color:  #0a2458;
+    background-color:  #fff;
     align-items: center;
     width: 100%;
 }
@@ -27,7 +27,7 @@ p {
 }
 
 .login-button {
-	background-color:#2ca1fb;
+	background-color:#007DFF;
 	border-radius:28px;
 	border:0px solid #fcb03d;
 	display:inline-block;
@@ -53,7 +53,7 @@ p {
 .top-header {
     display: flex;
     justify-content: space-between;
-    background-color:  #0a2458;
+    background-color:  #fff;
     align-items: center;
     width: 100%;
 }
@@ -65,7 +65,7 @@ p {
 }
 
 .login-button {
-	background-color:#2ca1fb;
+	background-color:#007DFF;
 	border-radius:28px;
 	border:0px solid #fcb03d;
 	display:inline-block;
@@ -84,7 +84,7 @@ p {
 /*--- ESTILOS DEL HOME ---*/
 
 main {
-    background-color: #000e29;
+    background-color: #fff;
 }
 
 .stepper-wrapper {
@@ -142,14 +142,13 @@ main {
   }
   
   .stepper-item.completed .step-counter {
-    background-color: #4bb543;
+    background-color: #007DFF;
   }
   
   .stepper-item.completed::after {
     position: absolute;
     content: "";
-    border-bottom: 2px solid #4bb543;
-    width: 100%;
+    border-bottom: 2px solid #007DFF;
     top: 20px;
     left: 50%;
     z-index: 3;
@@ -170,7 +169,7 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
-    background-color: #4178B9;
+    background-color: #fcaf3d;
     align-items:flex-end;
     align-items: center;
     width: 100%;
@@ -213,7 +212,7 @@ main {
 }
 
 .cotizador-button {
-    background:    #2ca1fb;
+    background:    #007DFF;
     border-radius: 1000px;
     color:         #ffffff;
     display:       inline-block;
@@ -309,7 +308,7 @@ h5 {
     width: 100%;
     margin-top: 10px;
     box-shadow: 0px 1px 10px rgba (0,0,0,0.2);
-    background: #2ca2fb;
+    background: #fcb03d;
     border-radius: 6px;
     overflow: hidden;
     cursor: default;
@@ -319,9 +318,17 @@ h5 {
 
 .card:hover {
     box-shadow: 5px 5px 20px rgba (1,1,1,0.4);
-    background: #fcb03d;
+    background: #007DFF;
+}
+.card i{
+    color: #fff;
+    font-size: 30px;
+    margin: 5px;
 }
 
+.card h3{
+    color: #fff;
+}
 @media (min-width: 768px) { 
    
     .container-card {
@@ -369,6 +376,7 @@ h5 {
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 
 }
 
@@ -407,7 +415,7 @@ h5 {
 }
 
 .siniestros-button {
-    background:#2ca1fb;
+    background:#007DFF;
     border-radius: 1000px;
     color: #ffffff;
     display: inline-block;
@@ -457,7 +465,7 @@ button {
     font-size: 15px;
     font-weight: 700;
     color: white;
-    background: #2ca2fb;
+    background: #007DFF;
     height: 65px;
     line-height: 65px;
     text-align: center;
@@ -516,27 +524,34 @@ button:hover{
 
 .pie-pagina{
     width: 100%;
-    background-color: #0a141d;
+    background-color: #fcaf3d
+
 }
 
 .pie-pagina .grupo-1{
-    width: 90%;
-   ; 
+    width: 90%; 
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px,
 }
- 
+.pie-pagina .grupo-1 .box-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
 .pie-pagina .grupo-1 figure{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
 .pie-pagina .grupo-1 figure img{
-    width: 50px ;
+    width: 200px ;
+    height: 100px;
 }
 
 .pie-pagina .grupo-1 .box h2{
@@ -550,8 +565,12 @@ button:hover{
     margin-bottom: 10px;
 }
 
+.pie-pagina .grupo-1 .rec-social{
+    display: flex;
+    justify-content: center;
+}
 .pie-pagina .grupo-1 .rec-social a{
-    display: inline-block;
+    display: inline;
     text-decoration: none;
     width: 45px;
     height: 45px;
@@ -561,6 +580,7 @@ button:hover{
     background-color: #0d2033;
     text-align: center;
     transition: all 300ms ease;
+    align-self: center;
 }
 
 .pie-pagina .grupo-1 .rec-social a:hover{
