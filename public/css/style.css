@@ -48,6 +48,38 @@ p {
 	top:1px;
 }
 
+@media (min-width: 768px) { 
+    
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #0a2458;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo {
+    width: 250px;
+    margin-left: 25px;
+}
+
+.login-button {
+	background-color:#2ca1fb;
+	border-radius:28px;
+	border:0px solid #fcb03d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:20px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    margin: 4px;
+}
+
+}
 
 /*--- ESTILOS DEL HOME ---*/
 
@@ -142,9 +174,10 @@ main {
     align-items:flex-end;
     align-items: center;
     width: 100%;
-    height: 350px;
+    height: 250px;
     margin-top: 20px;
     margin-bottom: 15px;
+    border-radius: 7%;
 }
 
 .cotizador form{
@@ -156,19 +189,19 @@ main {
 }
 .cotizador select {
     width: 30%;
-    height: 60px;
+    height: 40px;
     font-size: 15px;
     color: #000e29;
     border: 1px solid #EFF1F6;
     background-color:white;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 0px 20px;
     margin: 4px;
 }
 .cotizador input {
     width: 30%;
-    height: 60px;
+    height: 40px;
     font-size: 15px;
     color: #000e29;
     border: 1px solid #EFF1F6;
@@ -180,27 +213,48 @@ main {
 }
 
 .cotizador-button {
-        display: inline-block;
-        font-size: 15px;
-        font-weight: 700;
-        color: white;
-        background: #2ca2fb;
-        height: 65px;
-        line-height: 65px;
-        text-align: center;
-        padding: 0 0px;
-        border-radius: 91px;
-        text-transform: uppercase;
-        transition: 0.3s;
-        border: none;
+    background:    #2ca1fb;
+    border-radius: 1000px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 5px/1;
+    text-align:    center;
+    margin: auto;
 }
+
 .cotizador-button:hover {
 	background-color:#fcb03d;
 }
+@media (min-width: 768px) { 
 
-.cotizador-button:active {
-	position:relative;
-	top:1px;
+    .cotizador-options{
+        width: 100%;
+    }
+    .cotizador select {
+        width: 30%;
+        height: 40px;
+        font-size: 15px;
+        color: #000e29;
+        border: 1px solid #EFF1F6;
+        background-color:white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 0px 20px;
+        margin: 4px;
+    }
+    .cotizador input {
+        width: 30%;
+        height: 40px;
+        font-size: 15px;
+        color: #000e29;
+        border: 1px solid #EFF1F6;
+        background-color:white;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding: 0px 20px;
+        margin: 4px;
+
+}
 }
 
 h5 {
@@ -241,17 +295,21 @@ h5 {
 
 /*--- ESTILOS DE LAS TARJETAS ---*/
 
-.container {
+.container-card {
     display: flex;
-    width:100%;
-    max-width:500px
+    flex-direction: column;
+    width:90%;
+    max-width:500px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
 }
 
 .card {
     width: 100%;
-    margin: 20px;
+    margin-top: 10px;
     box-shadow: 0px 1px 10px rgba (0,0,0,0.2);
-    background: #fff;
+    background: #2ca2fb;
     border-radius: 6px;
     overflow: hidden;
     cursor: default;
@@ -260,12 +318,108 @@ h5 {
 }
 
 .card:hover {
-    box-shadow: 5px 5px 20px rgba (0,0,0,0.4)
+    box-shadow: 5px 5px 20px rgba (1,1,1,0.4);
+    background: #fcb03d;
+}
+
+@media (min-width: 768px) { 
+   
+    .container-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 15px;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    }
+
+    @media (min-width: 1024px) {  
+        
+        .container-card {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        grid-column-gap: 25px;
+        grid-row-gap: 15px;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        max-width: 80%;
+    }
+}
+
+/*--- ESTILOS DE LAS TARJETAS DE DESCRIPCION ---*/
+.siniestro-seccion{
+    display: flex;
+}
+
+.siniestros-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(300deg, rgba(2,0,36,1) 0%, rgba(44,162,251,1) 46%, rgba(53,141,159,1) 100%);
+    border-radius: 6px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-/*--- ESTILOS DEL FORMULARIO DE REGISTRO ---*/
+.siniestros-container h2{
+    color: #EFF1F6;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding: 15px;
+}
 
+.siniestros-container h3{
+    color:#fcaf3d;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.siniestros-container h4{
+    color:#ccc;
+    font-size: 20px;
+    text-align: left;
+    padding-left:  15px;
+}
+.siniestros-descripcion i{
+    color: #fcaf3d;
+    margin-right: 5px;
+ }
+
+.siniestros-descripcion{
+    color: #EFF1F6;
+    font-size:15px;
+    text-align: left;
+    margin-top: 30px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.siniestros-button {
+    background:#2ca1fb;
+    border-radius: 1000px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 5px/1;
+    text-align: center;
+    margin: 10px;
+}
+
+.siniestros-button:hover {
+	background-color:#fcb03d;
+}
+/*--- ESTILOS DEL FORMULARIO DE REGISTRO ---*/
 .register-section {
     background-color:  #000e29;
     padding: 20px;
@@ -358,30 +512,70 @@ button:hover{
 
 /*--- ESTILOS PARA EL FOOTER ---*/
 
-.footer-section-top {
+/* Footer */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1{
+    width: 90%;
+   ; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px,
+}
+ 
+.pie-pagina .grupo-1 figure{
+    width: 100%;
+    height: 100%;
     display: flex;
-    text-align: center;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.footer-cards {
-    width: 90%;
-    color: white;
-    border: solid 2px white;
-    border-radius: 5px;
-    margin: 10px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 
+.pie-pagina .grupo-1 figure img{
+    width: 50px ;
 }
-footer {
-    background-color:  #000e29;
-}
-.footer-section-bottom {
+
+.pie-pagina .grupo-1 .box h2{
     color: white;
-    margin: 10px;
-    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .rec-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
     text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .rec-social a:hover{
+ color:aqua   
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
 }
 
 /*--- ESTILOS PARA EL CARRITO DE COMPRAS  ---*/
