@@ -11,7 +11,7 @@ let mainControllers = {
         res.render(path.resolve(__dirname, '../views/register.ejs'))
     },
     productdetail: (req, res) => {
-        res.render(path.resolve(__dirname, '../views/productdetail.html'))
+        res.render(path.resolve(__dirname, '../views/productdetail.ejs'))
     },
     carritodecompra: (req, res) => {
         res.render(path.resolve(__dirname, '../views/carritodecompra.html'))
