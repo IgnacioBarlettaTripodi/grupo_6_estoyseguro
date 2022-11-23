@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+<body>
+    <!-- SECCION PRINCIPAL -->
+<%- include('./partials/header') %>
+<body class="body-login">
+    <section class="login-section">
+        <div>
+            <h3>INGRESAR</h3>
+        </div>
+        <div>
+            <form action="/login" method="post" class="login-form">
+                <input type="number" name="tax" placeholder="CUIT o DNI">
+                <input type="email" name="email" placeholder="Correo electrónico">
+                <input type="password" name="password" placeholder="Clave de usuario">
+            </form>        
+        </div>
+        <div>
+            <a href="">Olvide mi contraseña</a>
+        </div>
+        <div>
+            <!-- ACA VA EL CAPTCHA  -->
+        </div>
+        <div>
+            <button id="submit" type="button" class="login-button">Ingresar</button>
+        </div>
+</section>
+</body>
+</html>
