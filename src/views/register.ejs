@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head') %>
-<body>
-    <!-- SECCION PRINCIPAL -->
+
+<body class="body-register">
 <%- include('./partials/header') %>
-<body>
     <section class="register-section">
+        <div>
+            <h3>Ingresa tus datos</h3>
+        </div>
         <div>
             <form action="/register" method="post" class="register-form">
                 <input type="text" name="name" placeholder="Nombre y Apellido o Razón Social">
@@ -16,15 +18,12 @@
                 <input type="email" name="email" placeholder="Confirme su correo electrónico">
                 <input type="password" name="password" placeholder="Clave de usuario">
                 <input type="password" name="password" placeholder="Confirme su clave de usuario">
+                <button id="submit" type="button" class="register-button">Registrarme</button>
             </form>        
-        </div>
+        <div>
         <div>
             <input type="checkbox" name="term&conditions" value="Acepta términos y condiciones">
             <p> Acepta términos y condiciones</p>
-        </div>
-        <br>
-        <div>
-            <button id="submit" type="button" class="register-button">Registrarme</button>
         </div>
     </section>
 </body>
