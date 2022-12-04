@@ -4,13 +4,21 @@ let router = express.Router();
 let mainControllers = require('../controllers/mainControllers')
 
 router.get('/', mainControllers.home)
+
 router.get('/login', mainControllers.login)
+
 router.get('/register', mainControllers.register)
+router.post('/register', mainControllers.processRegister) // Esta todavia no hace nada
+
+
 router.get('/productdetail', mainControllers.productdetail)
+
 router.get('/carritodecompra', mainControllers.carritodecompra)
-router.get('/register', mainControllers.head)
-router.get('/register', mainControllers.header)
-router.get('/register', mainControllers.footer)
+
+
+// router.use('/products', productsRouter)
+// router.use('/users', usersRouter)
+// router.use('/admin', adminRouter)
 
 
 module.exports = router

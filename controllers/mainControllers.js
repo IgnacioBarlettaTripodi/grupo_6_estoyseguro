@@ -2,29 +2,23 @@ const path = require ('path');
 
 let mainControllers = {
     home: (req, res) => {
-        res.render(path.resolve(__dirname, "../views/home.ejs"))
+        res.render('home')
     },
     login: (req, res) => {
-        res.render(path.resolve(__dirname, "../views/login.ejs"))
+        res.render('login')
     },
     register: (req, res) => {
-        res.render(path.resolve(__dirname, '../views/register.ejs'))
+        res.render('login')
+    },
+    processRegister: (req,res) => {
+        res.send ('viniste por Post REy')
     },
     productdetail: (req, res) => {
-        res.render(path.resolve(__dirname, '../views/productdetail.ejs'))
+        res.render('productdetail')
     },
     carritodecompra: (req, res) => {
-        res.render(path.resolve(__dirname, '../views/carritodecompra.html'))
-    },
-    head: (req, res) =>{
-        res.render(path.resolve(__dirname, '../views/partials/head'))
-    },
-    header: (req, res) => {
-        res.render(path.resolve(__dirname, '../views/partials/header'))
-    },
-    footer: (req, res) => {
-        res.render(path.resolve(__dirname, '../views/partials/footer'))
-    },
+        res.render('carritodecompra')
+    }
 }
 
 module.exports = mainControllers

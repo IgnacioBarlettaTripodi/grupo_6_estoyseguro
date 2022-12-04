@@ -6,26 +6,26 @@
 <%- include('./partials/header') %>
 <body>
     <section class="register-section">
-        <div>
-            <form action="/register" method="post" class="register-form">
-                <input type="text" name="name" placeholder="Nombre y Apellido o Razón Social">
-                <input type="number" name="tax" placeholder="CUIT o DNI">
-                <input type="text" name="country" placeholder="País">
-                <input type="number" name="phone&number" placeholder="Teléfono">
-                <input type="email" name="email" placeholder="Correo electrónico">
-                <input type="email" name="email" placeholder="Confirme su correo electrónico">
-                <input type="password" name="password" placeholder="Clave de usuario">
-                <input type="password" name="password" placeholder="Confirme su clave de usuario">
-            </form>        
-        </div>
-        <div>
-            <input type="checkbox" name="term&conditions" value="Acepta términos y condiciones">
-            <p> Acepta términos y condiciones</p>
-        </div>
-        <br>
-        <div>
-            <button id="submit" type="button" class="register-button">Registrarme</button>
-        </div>
+        <form action="/register" method="POST">
+            <div class="register-form">
+
+                    <input type="text" name="name" placeholder="Nombre y Apellido o Razón Social">
+                    <input type="number" name="tax" placeholder="CUIT o DNI">
+                    <input type="text" name="country" placeholder="País">
+                    <input type="number" name="phone&number" placeholder="Teléfono">
+                    <input type="email" name="email" placeholder="Correo electrónico">
+                    <input type="email" name="email" placeholder="Confirme su correo electrónico">
+                    <input type="password" name="password" placeholder="Clave de usuario">
+                    <input type="password" name="password" placeholder="Confirme su clave de usuario">
+            </div>
+            <div>
+                <input type="checkbox" name="term&conditions" value="Acepta términos y condiciones">
+                <p> Acepta términos y condiciones</p>
+            </div>
+            <div>
+                <button id="submit" type="button" class="register-button">Registrarme</button>
+            </div>
+         </form>
     </section>
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('./partials/head', {title: 'Formulario de creación'}) %>
+<body>
+	<!-- Header -->
+	<%- include('./partials/header') %>
+	<!-- /Header -->
+
+	<div>
+		<div>
+			<div>
+				<h2>Formulario de creación de productos</h2>
+			</div>
+		</div>
+		<div>
+			<form action="/products/create/" method="POST" enctype="multipart/form-data">
+				<div>
+					<div>
+						<label for="name">Nombre del producto:</label>
+						<input type="text" id="name" name="name" placeholder="Ej: Seguro para automoviles General">
+					</div>
+					<div>
+						<label for="price">Precio del producto:</label>
+						<input type="text" id="price" name="price" placeholder="Ej: 5678">
+					</div>
+					<div>
+						<label for="duration">Duracion</label>
+						<input type="text" id="duration" name="duration" placeholder="Ej: x cantidad de anos">
+					</div>
+					<div>
+						<label for="category">Categoría:</label>
+						<select name="category" id="category">
+							<option value="">Elegí</option>
+							<option value="automoviles">Oro</option>
+							<option value="visited">Platino </option>
+						</select>
+					</div>
+					<div>
+						<label for="description">Descipción:</label>
+						<textarea name="description" id="description"></textarea>
+					<div>
+						<label for= "image"> Imagen </label> 
+						<input type="file" name="image">
+						</div>
+					</div>
+					<div>
+						<button type="submit">Guardar producto</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>
