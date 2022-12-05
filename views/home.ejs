@@ -1,218 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head') %>
+<body>
+    <!-- SECCION PRINCIPAL -->
+<%- include('./partials/header') %>
 
-    <body>
-        <!-- SECCION PRINCIPAL -->
-        <%- include('./partials/header') %>
-
-            <main>
-                <!--STEPPER-->
-                <section>
-                    <article>
-                        <div class="stepper-wrapper">
-                            <div class="stepper-item completed">
-                                <div class="step-counter">1</div>
-                                <div class="step-name">Buscá</div>
-                            </div>
-                            <div class="stepper-item active">
-                                <div class="step-counter">2</div>
-                                <div class="step-name">Elegí</div>
-                            </div>
-                            <div class="stepper-item active">
-                                <div class="step-counter">3</div>
-                                <div class="step-name">Solicitá</div>
-                            </div>
-                            <div class="stepper-item active">
-                                <div class="step-counter">4</div>
-                                <div class="step-name">Pagá</div>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-
-                <section>
-                    <!-- COTIZADOR -->
-
-                    <!-- <article class="cotizador">
-                        <h5>Cotizá tu seguro y emití tu póliza en 4 pasos</h5>
-                        <div class="cotizador-options">
-                            <form>
-                                <select name="activity" id="activity">
-                                    <option value="0">Seleccioná tu actividad</option>
-                                    <option value="1">Actividad 1</option>
-                                    <option value="2">Actividad 2</option>
-                                    <option value="3">Actividad 3</option>
-                                </select>
-                                <select name="quantity" id="quantity">
-                                    <option value="0">Personas</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <input type="date" name="since" id="since">
-                            </form>
-                        </div>
-                        <div class="cotizador-button">
-                            <button type="button" id="quote" name="quote">COTIZAR</button>
-                        </div>
-                    </article> -->
-                    <!-- SEPARADOR -->
-                    <div>
-                        <i class="fa-light fa-horizontal-rule"></i>
+    <main>
+        <!--STEPPER-->
+        <section>
+            <article>
+                <div class="stepper-wrapper">
+                    <div class="stepper-item completed">
+                      <div class="step-counter">1</div>
+                      <div class="step-name">Buscá</div>
                     </div>
-                    <!-- TARJETAS -->
-                    <div class="iconos-tarjetas">
-                        <i class="fa-brands fa-cc-visa"></i>
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                        <i class="fa-brands fa-cc-paypal"></i>
-                        <i class="fa-brands fa-cc-amex"></i>
-                        <i class="fa-brands fa-cc-amazon-pay"></i>
-                        <i class="fa-brands fa-cc-diners-club"></i>
+                    <div class="stepper-item active">
+                      <div class="step-counter">2</div>
+                      <div class="step-name">Elegí</div>
                     </div>
-                    <!-- SLIDER -->
-                    <div class="container">
-                        <!-- Slider main container -->
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide"><img src="images/sliderphoto1.jpg"></div>
-                                <div class="swiper-slide"><img src="images/sliderphoto2.jpg"></div>
-                                <div class="swiper-slide"><img src="images/life-in.jpg"></div>
-                                <div class="swiper-slide"><img src="images/slider-bg.jpg"></div>
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
-
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
+                    <div class="stepper-item active">
+                      <div class="step-counter">3</div>
+                      <div class="step-name">Solicitá</div>
                     </div>
-                    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-                    <script>
-                        const swiper = new Swiper('.swiper', {
-                            // Optional parameters
-                            autoplay: {
-                                delay: 3000,
-                                disableOnInteraction: false
-                            },
-                            loop: true,
+                    <div class="stepper-item active">
+                      <div class="step-counter">4</div>
+                      <div class="step-name">Pagá</div>
+                    </div>
+                  </div>
+            </article>
+        </section>
 
-                            // If we need pagination
-                            pagination: {
-                                el: '.swiper-pagination',
-                                clickable: true,
-                            },
-
-                            // Navigation arrows
-                            navigation: {
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                            },
-                        });
-                    </script>
-                    <!--TARJETAS DE PRODUCTOS-->
-                    <article class=" card-seccion">
-                        <div class="container-card">
-                            <div class="card">
-                                <figure>
-                                    <i class="fa-solid fa-car"></i>
-                                </figure>
-                                <div class="contenido">
-                                    <h3>Automoviles</h3>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <figure>
-                                    <i class="fa-solid fa-heart"></i></i>
-                                </figure>
-                                <div class="contenido">
-                                    <h3>Seguros de Vida</h3>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <figure>
-                                    <i class="fa-solid fa-scale-balanced"></i>
-                                </figure>
-                                <div class="contenido">
-                                    <h3>Riesgo Civil</h3>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <figure>
-                                    <i class="fa-solid fa-briefcase"></i>
-                                </figure>
-                                <div class="contenido">
-                                    <h3>Riesgo de Trabajo</h3>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <figure>
-                                    <i class="fa-solid fa-fire"></i>
-                                </figure>
-                                <div class="contenido">
-                                    <h3>Incendio</h3>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <figure>
-                                    <i class="fa-solid fa-mobile"></i>
-                                </figure>
-                                <div class="contenido">
-                                    <h3>Dispositivos Electrónicos</h3>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <figure>
-                                    <i class="fa-sharp fa-solid fa-route"></i>
-                                </figure>
-                                <div class="contenido">
-                                    <h3>Riesgo Cibernetico</h3>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <figure>
-                                    <i class="fa-solid fa-scroll"></i>
-                                </figure>
-                                <div class="contenido">
-                                    <h3>Cauciones</h3>
-                                </div>
-                            </div>
+        <section>
+             <!-- COTIZADOR -->
+            
+            <article class="cotizador">
+            <h5>Cotizá tu seguro y emití tu póliza en 4 pasos</h5>
+            <div class="cotizador-options">
+                <form> 
+                    <select name="activity" id="activity">
+                            <option value="0">Seleccioná tu actividad</option>
+                            <option value="1">Actividad 1</option>
+                            <option value="2">Actividad 2</option>
+                            <option value="3">Actividad 3</option>
+                    </select>
+                    <select name="quantity" id="quantity">
+                            <option value="0">Personas</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                    </select>
+                        <input type="date" name="since" id="since">
+                </div>
+                <a href="" class="btn"><button>COTIZÁR</button></a>
+                </form> 
+            </article> 
+                <!-- SEPARADOR -->
+                <div>
+                    <i class="fa-light fa-horizontal-rule"></i>
+                </div>
+                <!-- TARJETAS -->
+                <div class="iconos-tarjetas">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                </div>
+                <!-- SLIDER -->
+                <div class="container">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="images/sliderphoto1.jpg"></div>
+                          <div class="swiper-slide"><img src="images/sliderphoto2.jpg"></div>
+                          <div class="swiper-slide"><img src="images/life-in.jpg"></div>
+                          <div class="swiper-slide"><img src="images/slider-bg.jpg"></div>
                         </div>
-                    </article>
-                    <!-- DESCRIPCIONES -->
-                    <article class="siniestro-seccion">
-                        <div class="siniestros-container">
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+                <script>
+                    const swiper = new Swiper('.swiper', {
+                    // Optional parameters
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                      el: '.swiper-pagination',
+                      clickable: true,
+                    },
+                
+                    // Navigation arrows
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
+                    });
+                </script>
+            <!--TARJETAS DE PRODUCTOS-->
+            <article class=" card-seccion">
+            <div class= "container-card">
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-car"></i>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Automoviles</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-heart"></i></i>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Seguros de Vida</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Riesgo Civil</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-briefcase"></i>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Riesgo de Trabajo</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-fire"></i>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Incendio</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-mobile"></i>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Técnologia</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                    <i class="fa-sharp fa-solid fa-route"></i>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Riesgo Cibernetico</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-scroll"></i>
+                    </figure>
+                    <div class= "contenido">
+                        <h3>Cauciones</h3>
+                    </div>
+                </div>
+            </div>        
+        </article>
+            <!-- DESCRIPCIONES -->
+                <article class="siniestro-seccion">
+                    <div class = "siniestros-container">
                             <h2>Siniestros 24hs</h2>
-                            <h3>Nos permite brindarle un mejor asesoramiento en el momento que más nos necesita, lo que
-                                es vital para tomar y brindar los datos correctos y asesorarse.</h3>
+                            <h3>Nos permite brindarle un mejor asesoramiento en el momento que más nos necesita, lo que es vital para tomar y brindar los datos correctos y asesorarse.</h3>
                             <h4>La Nota de denuncia: debe incluir como mínimo los siguientes datos</h4>
-                            <div class="siniestros-descripcion">
-                                <div><i class="fa-solid fa-check"></i>Fecha de ocurrencia / circunstancia del hecho
-                                </div>
-                                <div><i class="fa-solid fa-check"></i>Detalles precisando tipo de siniestro.</div>
-                                <div><i class="fa-solid fa-check"></i>Monto Estimado del daño.</div>
-                                <div><i class="fa-solid fa-check"></i>Denuncia policial o de las autoridades competentes
-                                    que intervinieron en el caso.</div>
-                                <div><i class="fa-solid fa-check"></i>En caso de denuncia de automotor: la denuncia se
-                                    realiza en el formulario específico de cada aseguradora y se deberá adjuntar copia
-                                    de cédula verde y registro del conductor. Si no hubiera Robo o Lesiones no se
-                                    realiza denuncia policial.</div>
-                                <div><i class="fa-solid fa-check"></i>Tomar todas las medidas de primera urgencia
-                                    destinadas a disminuir las pérdidas y/o daños . En caso de necesitar por motivos
-                                    valederos modificar, reparar o reemplazar el bien dañado para evitar pérdidas
-                                    mayores, Antes de la inspección de la aseguradora, deberán tomarse fotografías del
-                                    bien conservando evidencia del/los daños.</div>
-                            </div>
-                            <div class="siniestros-button">
-                                <button type="button" id="quote" name="quote">Formulario para Siniestros</button>
-                            </div>
+                        <div class="siniestros-descripcion">
+                            <div><i class="fa-solid fa-check"></i>Fecha de ocurrencia / circunstancia del hecho</div>
+                            <div><i class="fa-solid fa-check"></i>Detalles precisando tipo de siniestro.</div>
+                            <div><i class="fa-solid fa-check"></i>Monto Estimado del daño.</div>
+                            <div><i class="fa-solid fa-check"></i>Denuncia policial o de las autoridades competentes que intervinieron en el caso.</div>
+                            <div><i class="fa-solid fa-check"></i>En caso de denuncia de automotor: la denuncia se realiza en el formulario específico de cada aseguradora y se deberá adjuntar copia de cédula verde y registro del conductor. Si no hubiera Robo o Lesiones no se realiza denuncia policial.</div>
+                            <div><i class="fa-solid fa-check"></i>Tomar todas las medidas de primera urgencia destinadas a disminuir las pérdidas y/o daños . En caso de necesitar por motivos valederos modificar, reparar o reemplazar el bien dañado para evitar pérdidas mayores, Antes de la inspección de la aseguradora, deberán tomarse fotografías del bien conservando evidencia del/los daños.</div>
+                        </div> 
+                        <div class="siniestros-button">
+                            <a href="" class="btn"><button>Formulario</button></a>
                         </div>
-                    </article>
-            </main>
-            <%- include('./partials/footer') %>
-    </body>
-
+                    </div>
+                </article>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
 </html>
