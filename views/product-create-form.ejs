@@ -5,8 +5,8 @@
 <body class="product-edit">
 	<%- include('./partials/header') %>
 	<section class="edit-section" >
-		<div>
-				<h2>Formulario de creación de productos</h2>
+		<div>				
+			<h2>Creár un Seguro</h2>
 		</div>
 		<div class="edit-form">
 			<form action="/products/create/" method="POST" enctype="multipart/form-data">
@@ -22,6 +22,10 @@
 					<div>
 						<label for="duration">Duracion</label>
 						<input type="text" id="duration" name="duration" placeholder="Ej: Cantidad de años">
+					</div>
+					<div>
+						<label for="icono">Icono del producto:</label>
+						<input type="text" id="icon" name="icon" placeholder="Ej: fa-fas-XX">
 					</div>					
 					<div>
 						<label for="description">Descipción:</label>
@@ -36,11 +40,11 @@
 						</select>
 					</div>
 					<div class="file-select">
-						<label for= "image"> Imagen </label> 
+						<label for= "image"> </label> 
 						<input type="file" name="image">
 					</div>
 					<div>
-						<button type="submit">Guardar producto</button>
+						<button id="submit" type="button" class="edit-button">CREAR</button>
 					</div>
 				</div>
 			</form>

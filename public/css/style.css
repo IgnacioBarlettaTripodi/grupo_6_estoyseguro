@@ -738,14 +738,13 @@ h5 {
         }
 }
 
-
 /*--- ESTILOS PARA EL PRODUCT-EDIT ---*/
 
 .product-edit{
     background: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(255,176,58,1) 0%, rgba(53,141,159,1) 100%);
 }
 
-.edit-section .form-title h2{
+.edit-section  h2{
     font-size: 25px;
     font-weight: 600;
     color: #EFF1F6;
@@ -841,14 +840,26 @@ h5 {
     height: 32px;
     display: inline-block;
   }
-  
 
+  .edit-form .edit-button{
+    width: 50%;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #fcaf3d;
+    font-size: 15px;
+    font-weight: 600;
+    border-color: #fcaf3d;
+    transition: all 0.3s;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
 
-
-
-
-
-
+.edit-form .edit-button:hover{
+    background-color: #007DFF;
+    transform: scale(1,1);
+    border-color: #007DFF;
+}
 
 /*--- ESTILOS PARA EL FOOTER ---*/
 /* Footer */
