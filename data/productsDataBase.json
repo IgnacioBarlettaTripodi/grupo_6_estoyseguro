@@ -1,66 +1,38 @@
 [
 	{
 		"id": 1,
-		"name": "SEGURO DE ACCIDENTES PERSONALES PARA ACOMODADOR PROTECCIÓN LABORAL",
-		"price": 150,
-		"category": "acomodador",
-		"description": "acomodador en eventos, teatros, estadios, recitales, conciertos, cine. (Persona que indica a los asistentes dónde deben sentarse",
-		"image": "imagen de que seguro va"
+		"name": "SEGURO DE AUTOMOVIL",
+		"price": 16000,
+		"category": "ORO",
+		"description": "La presente cobertura constituye un seguro de responsabilidad civil, más conocido como seguro contra terceros y es el que te brinda cobertura frente a daños físicos y materiales ocasionados a otras personas, transportadas o no, como consecuencia de un accidente de tránsito ",
+		"monto": 1000000,
+		"icono": "fa-solid fa-car"
 	},
     {
 		"id": 2,
-        "name": "SEGURO DE ACCIDENTES PERSONALES PARA AEROBOX - OCASION DEPORTIVA",
-		"price": 68.70,
-		"category": "Aerobox",
-		"description": "Aerobox-Boxeo Deportivo",
-		"image": "imagen de que seguro va"
+		"name": "SEGURO DE AUTOMOVIL",
+		"price": 25000,
+		"category": "PLATINO",
+		"description": "Con esta cobertura los daños de tu vehículo están cubiertos sin importar tu responsabilidad en el choque. El pago de la franquicia estará a cargo del asegurado ",
+		"monto": "15000000",
+		"icono": "fa-solid fa-car"
 	},
     {
 		"id": 3,
-		"name": "SEGURO DE ACCIDENTES PERSONALES PARA CRICKET - OCASION DEPORTIVA",
-		"price": 1700,
-		"category": "cricket",
-		"description": "Reembolso de gastos de servicio de ambulancia. Ante la ocurrencia de un accidente se otorgan por este concepto y en forma adicional al límite de AMF. -Incluye gastos por servicio de taxis y/o remis.",
-		"image": "imagen de que seguro va"
+		"name": "SEGURO DE AUTOMOVIL",
+		"price": 16000,
+		"category": "ORO",
+		"description": "La presente cobertura constituye un seguro de responsabilidad civil, más conocido como seguro contra terceros y es el que te brinda cobertura frente a daños físicos y materiales ocasionados a otras personas, transportadas o no, como consecuencia de un accidente de tránsito ",
+		"monto": 1000000,
+		"icono": "fa-solid fa-car"
 	},
     {
 		"id": 4,
-		"name": "SEGURO DE ACCIDENTES PERSONALES PARA DIRECTOR DE OBRAS PROTECCIÓN LABORAL",
-		"price": 570,
-		"category": "Director de Obras",
-		"description": "Aplica un deducible de $500 hasta $1.000 por evento según corresponda el producto",
-		"image": "imagen de que seguro va"
-	},
-    {
-		"id": 5,
-		"name": "SEGURO DE ACCIDENTES PERSONALES PARA JARDINERO PROTECCIÓN LABORAL",
-		"price": 70,
-		"category": "Jardinero",
-		"description": "Trabajo de Jardineria, poda de arboles en altura",
-		"image": "imagen de que seguro va"
-	},
-    {
-		"id": 6,
-		"name": "SEGURO DE ACCIDENTES PERSONALES PARA KITESURF PROTECCIÓN LABORAL",
-		"price": 704,
-		"category": "Kitesurf",
-		"description": "Kitesurf, kite, skysurf , navegación a vela",
-		"image": "imagen de que seguro va"
-	},
-    {
-		"id": 7,
-		"name": "SEGURO DE ACCIDENTES PERSONALES PARA LIMPIEZA EN HOGAR PROTECCIÓN LABORAL",
-		"price": 217,
-		"category": "Limpieza en Hogar",
-		"description": "Limpieza del hogar, servicio doméstico, empleada doméstica, servicio de limpieza para casas",
-		"image": "imagen de que seguro va"
-	},
-    {
-		"id": 8,
-		"name": "SEGURO DE ACCIDENTES PERSONALES PARA NATACION EN NATATORIO OCASIÓN DE TRABAJO",
-		"price": 530,
-		"category": "Natacion",
-		"description": "Natacion en natatorio",
-		"image": "imagen de que seguro va"
+		"name": "SEGURO DE AUTOMOVIL",
+		"price": 16000,
+		"category": "ORO",
+		"description": "La presente cobertura constituye un seguro de responsabilidad civil, más conocido como seguro contra terceros y es el que te brinda cobertura frente a daños físicos y materiales ocasionados a otras personas, transportadas o no, como consecuencia de un accidente de tránsito ",
+		"monto": 1000000,
+		"icono": "fa-solid fa-car"
 	}
 ]
