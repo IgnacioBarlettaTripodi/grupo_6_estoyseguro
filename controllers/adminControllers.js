@@ -1,8 +1,12 @@
 const path = require ('path');
 
 let adminControllers = {
-    productedit: (req,res) => {
+    productcreate: (req,res) => {
         res.render('product-create-form')
+    },
+
+    productdetail: (req,res) => {
+        res.render('product-detail-form')
     }
 }
 

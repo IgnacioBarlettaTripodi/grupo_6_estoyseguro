@@ -184,7 +184,7 @@ main {
     justify-content: space-around;
     align-items: center;
     background-color: #fcaf3d;
-    width: 90%;
+    width: 80%;
     height: 250px;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -738,13 +738,13 @@ h5 {
         }
 }
 
-/*--- ESTILOS PARA EL PRODUCT-EDIT ---*/
+/*--- ESTILOS PARA EL PRODUCT-CREATE ---*/
 
-.product-edit{
+.product-create{
     background: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(255,176,58,1) 0%, rgba(53,141,159,1) 100%);
 }
 
-.edit-section  h2{
+.create-section  h2{
     font-size: 25px;
     font-weight: 600;
     color: #EFF1F6;
@@ -754,11 +754,11 @@ h5 {
     margin-top: 25px;
 }
 
-.edit-form{
+.create-form{
     text-align: center;
 }
 
-.edit-form label{
+.create-form label{
     line-height: 25px;
     font-weight: 400;
     color: #EFF1F6;
@@ -766,7 +766,7 @@ h5 {
 }
 
 
-.edit-form input[type=text], textarea{
+.create-form input[type=text], textarea{
     padding: 4px 2px; 
     border: 1px solid #aaa;
     background: #fff;
@@ -841,7 +841,7 @@ h5 {
     display: inline-block;
   }
 
-  .edit-form .edit-button{
+  .create-form .edit-button{
     width: 50%;
     height: 60px;
     border-radius: 25px;
@@ -855,10 +855,65 @@ h5 {
     margin-bottom: 25px;
 }
 
-.edit-form .edit-button:hover{
+.create-form .edit-button:hover{
     background-color: #007DFF;
     transform: scale(1,1);
     border-color: #007DFF;
+}
+/*--- ESTILOS PARA EL DETAIL PRODUCT ---*/
+
+.product-detail-section h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #EFF1F6;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.product-detail-form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid navy;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+.product-detail-form div h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #EFF1F6;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.product-detail-inline h4{
+    display: block;
+}
+
+.product-detail-form .product-detail-description{
+    border: 1px solid navy;
+}
+
+.product-detail-buttons .btn button {
+    display: inline;
+    font-weight: 700;
+    color: white;
+    padding: 6px 20px;
+    background: #007DFF;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.product-detail-buttons .btn button:hover{
+    color: #fcaf3d;
+    transform: scale(1.1)
 }
 
 /*--- ESTILOS PARA EL FOOTER ---*/

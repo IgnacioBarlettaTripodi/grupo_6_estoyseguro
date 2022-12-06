@@ -2,13 +2,13 @@
 <html lang="es">
 <%- include('./partials/head', {title: 'Formulario de creación'}) %>
 
-<body class="product-edit">
+<body class="product-create">
 	<%- include('./partials/header') %>
-	<section class="edit-section" >
+	<section class="create-section" >
 		<div>				
 			<h2>Creár un Seguro</h2>
 		</div>
-		<div class="edit-form">
+		<div class="create-form">
 			<form action="/products/create/" method="POST" enctype="multipart/form-data">
 				<div>
 					<div>
@@ -20,7 +20,7 @@
 						<input type="text" id="price" name="price" placeholder="Ej: 5678">
 					</div>
 					<div>
-						<label for="duration">Duracion</label>
+						<label for="duration">Duracion:</label>
 						<input type="text" id="duration" name="duration" placeholder="Ej: Cantidad de años">
 					</div>
 					<div>
