@@ -3,8 +3,8 @@ let router = express.Router();
 
 let adminControllers = require('../controllers/adminControllers');
 
-router.get('/productcreate', adminControllers.productcreate);
+router.get('/productcreate', adminControllers.create);
 
-router.get('/productdetail', adminControllers.productdetail);
+router.get('/productdetail/:id/', adminControllers.productdetail);
 
 module.exports = router
