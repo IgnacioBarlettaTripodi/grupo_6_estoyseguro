@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Include Head -->
 <%- include('./partials/head', {title: 'Formulario de creación'}) %>
-<body>
-	<!-- Header -->
-	<%- include('./partials/header') %>
-	<!-- /Header -->
 
-	<div>
-		<div>
-			<div>
-				<h2>Formulario de creación de productos</h2>
-			</div>
+<body class="product-create">
+	<%- include('./partials/header') %>
+	<section class="create-section" >
+		<div>				
+			<h2>Creár un Seguro</h2>
 		</div>
-		<div>
+		<div class="create-form">
 			<form action="/products/create/" method="POST" enctype="multipart/form-data">
 				<div>
 					<div>
@@ -25,37 +20,35 @@
 						<input type="text" id="price" name="price" placeholder="Ej: 5678">
 					</div>
 					<div>
-						<label for="duration">Duracion</label>
-						<input type="text" id="duration" name="duration" placeholder="Ej: x cantidad de anos">
+						<label for="duration">Duracion:</label>
+						<input type="text" id="duration" name="duration" placeholder="Ej: Cantidad de años">
+					</div>
+					<div>
+						<label for="icono">Icono del producto:</label>
+						<input type="text" id="icon" name="icon" placeholder="Ej: fa-fas-XX">
+					</div>					
+					<div>
+						<label for="description">Descipción:</label>
+						<textarea name="description" id="description"></textarea>
 					</div>
 					<div>
 						<label for="category">Categoría:</label>
-						<select name="category" id="category">
+						<select name="category" id="category" class="select-css">
 							<option value="">Elegí</option>
 							<option value="automoviles">Oro</option>
 							<option value="visited">Platino </option>
 						</select>
 					</div>
-					<div>
-						<label for="description">Descipción:</label>
-						<textarea name="description" id="description"></textarea>
-					<div>
-						<label for= "image"> Imagen </label> 
+					<div class="file-select">
+						<label for= "image"> </label> 
 						<input type="file" name="image">
-						</div>
 					</div>
 					<div>
-						<button type="submit">Guardar producto</button>
+						<button id="submit" type="button" class="edit-button">CREAR</button>
 					</div>
 				</div>
 			</form>
 		</div>
-
-	</div>
-	<!-- /todos los productos -->
-
-	<!-- footer -->
-	<%- include('partials/footer') %>
-	<!-- /footer -->
+	</section>
 </body>	
 </html>

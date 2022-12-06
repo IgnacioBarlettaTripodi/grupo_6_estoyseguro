@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head', {title: 'Formulario de creación'}) %>
+
+<body class="product-edit">
+	<%- include('./partials/header') %>
+	<section class="product-detail-section" >
+		<div>				
+			<h2>Edita tus seguros</h2>
+		</div>
+		<div class="product-detail-form">
+            <div>
+                <h3><%= product.name %> </h3>
+            </div>
+            <div class="card">
+                <figure>
+                    <i class="<%= product.icono %>"></i>
+                </figure>
+                <div class= "card-info">
+                    <h3><%= product.name %> </h3>
+                </div>
+            </div>
+            <div class="product-detail-inline">
+            <h4>Categoria:</h4><h5> <%= product.category %> </h5>
+            <h4>Precio:</h4><h5> $<%= product.price %> / MES </h5>
+            </div>
+            <div class="product-detail-description">
+                <p><%= product.description %> </p>
+            </div>
+            <div class="product-detail-buttons">
+                <a href="/register" class="btn"><button>Editar</button></a>
+                <a href="/login" class="btn"><button>Eliminar</button></a>
+            </div>
+		</div>
+	</section>
+</body>	
+</html>
