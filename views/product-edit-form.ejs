@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head', {title: 'Formulario de creación'}) %>
+
+<body class="product-create">
+	<%- include('./partials/header') %>
+	<section class="create-section" >
+		<div>				
+			<h2>Estas editando el producto <i><%= product.name %> </i> </h2>
+		</div>
+		<div class="create-form">
+			<form action="/products/edit/<%= product.id %>/?_method=put" method="POST">
+				<div>
+					<div>
+						<label for="name">Nombre del producto:</label>
+						<input type="text" id="name" name="name" placeholder="Ej: Seguro para automoviles General" value="<%= product.name%> ">
+					</div>
+					<div>
+						<label for="price">Precio del producto:</label>
+						<input type="text" id="price" name="price" placeholder="Ej: 5678" value="<%= product.price%> ">
+					</div>
+					<div>
+						<label for="duration">Duracion:</label>
+						<input type="text" id="duration" name="duration" placeholder="Ej: Cantidad de años" value="<%= product.duration%> ">
+					</div>
+					<div>
+						<label for="icono">Icono del producto:</label>
+						<input type="text" id="icon" name="icon" placeholder="Ej: fa-fas-XX" value="<%= product.icono%> ">
+					</div>					
+					<div>
+						<label for="description">Descipción:</label>
+						<textarea name="description" id="description"><%= product.description %> </textarea>
+					</div>
+					<div>
+						<label for="category">Categoría:</label>
+						<select name="category" id="category" class="select-css">
+							<option value="">Elegí</option>
+							<option value="automoviles">Oro</option>
+							<option value="visited">Platino </option>
+						</select>
+					</div>
+					<div class="file-select">
+						<label for= "image"> </label> 
+						<input type="file" name="image">
+					</div>
+					<div>
+						<button id="submit" type="button" class="edit-button">GUARDAR</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+</body>	
+</html>

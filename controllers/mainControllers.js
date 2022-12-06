@@ -8,7 +8,7 @@ let mainControllers = {
         res.render('login')
     },
     register: (req, res) => {
-        res.render('login')
+        res.render('register')
     },
     processRegister: (req,res) => {
         res.send ('viniste por Post REy')
