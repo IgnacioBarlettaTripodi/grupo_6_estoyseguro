@@ -3,7 +3,8 @@
 		"id": 1,
 		"name": "SEGURO DE ACCIDENTES PERSONALES PARA ACOMODADOR PROTECCIÓN LABORAL",
 		"price": 150,
-		"category": "acomodador",
+		"category":"gold",
+		"duration": 5,
 		"description": "acomodador en eventos, teatros, estadios, recitales, conciertos, cine. (Persona que indica a los asistentes dónde deben sentarse",
 		"image": "imagen de que seguro va"
 	},
@@ -11,7 +12,8 @@
 		"id": 2,
         "name": "SEGURO DE ACCIDENTES PERSONALES PARA AEROBOX - OCASION DEPORTIVA",
 		"price": 68.70,
-		"category": "Aerobox",
+		"category":"platinum",
+		"duration": 6,
 		"description": "Aerobox-Boxeo Deportivo",
 		"image": "imagen de que seguro va"
 	},
@@ -19,7 +21,8 @@
 		"id": 3,
 		"name": "SEGURO DE ACCIDENTES PERSONALES PARA CRICKET - OCASION DEPORTIVA",
 		"price": 1700,
-		"category": "cricket",
+		"category":"gold",
+		"duration": 5,
 		"description": "Reembolso de gastos de servicio de ambulancia. Ante la ocurrencia de un accidente se otorgan por este concepto y en forma adicional al límite de AMF. -Incluye gastos por servicio de taxis y/o remis.",
 		"image": "imagen de que seguro va"
 	},
@@ -27,7 +30,8 @@
 		"id": 4,
 		"name": "SEGURO DE ACCIDENTES PERSONALES PARA DIRECTOR DE OBRAS PROTECCIÓN LABORAL",
 		"price": 570,
-		"category": "Director de Obras",
+		"category":"platinum",
+		"duration": 7,
 		"description": "Aplica un deducible de $500 hasta $1.000 por evento según corresponda el producto",
 		"image": "imagen de que seguro va"
 	},
@@ -35,7 +39,8 @@
 		"id": 5,
 		"name": "SEGURO DE ACCIDENTES PERSONALES PARA JARDINERO PROTECCIÓN LABORAL",
 		"price": 70,
-		"category": "Jardinero",
+		"category":"platinum",
+		"duration": 5,
 		"description": "Trabajo de Jardineria, poda de arboles en altura",
 		"image": "imagen de que seguro va"
 	},
@@ -43,7 +48,8 @@
 		"id": 6,
 		"name": "SEGURO DE ACCIDENTES PERSONALES PARA KITESURF PROTECCIÓN LABORAL",
 		"price": 704,
-		"category": "Kitesurf",
+		"category":"gold",
+		"duration": 2,
 		"description": "Kitesurf, kite, skysurf , navegación a vela",
 		"image": "imagen de que seguro va"
 	},
@@ -51,7 +57,8 @@
 		"id": 7,
 		"name": "SEGURO DE ACCIDENTES PERSONALES PARA LIMPIEZA EN HOGAR PROTECCIÓN LABORAL",
 		"price": 217,
-		"category": "Limpieza en Hogar",
+		"category":"gold",
+		"duration": 1,
 		"description": "Limpieza del hogar, servicio doméstico, empleada doméstica, servicio de limpieza para casas",
 		"image": "imagen de que seguro va"
 	},
@@ -59,7 +66,8 @@
 		"id": 8,
 		"name": "SEGURO DE ACCIDENTES PERSONALES PARA NATACION EN NATATORIO OCASIÓN DE TRABAJO",
 		"price": 530,
-		"category": "Natacion",
+		"category":"platinum",
+		"duration": 4,
 		"description": "Natacion en natatorio",
 		"image": "imagen de que seguro va"
 	}
