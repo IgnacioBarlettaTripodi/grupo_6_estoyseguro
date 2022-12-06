@@ -6,12 +6,13 @@
 
 /* ---ESTILOS PARA EL HEADER ---*/
 .header{
-    background-color: #ccc;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 140px;
     padding: 5px 2%;
+    box-shadow: 0px 10px 21px rgb(0 0 0 / 5%);
 }
 
 .header .logo{
@@ -36,7 +37,7 @@
     display: inline-block;
     padding: 0 28px;
     transition: all 0.3s;
-
+    color: black;
 }
 
 .header .nav-links li:hover{
@@ -45,9 +46,9 @@
 }
 
 .header .nav-links a{
-    font-size: 17px;
-    font-weight: 700;
-    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
     text-decoration: none;
 }
 
@@ -83,7 +84,7 @@ nav {
 @media (min-width: 1440px){
     .header .nav-links a{
         display: inline-block;
-        font-size: 25px;
+        font-size: 20px;
         
     }
     
@@ -388,7 +389,7 @@ h5 {
 }
 
 .siniestros-container{
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,7 +401,7 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
-
+    padding: 15px 35px;
 }
 
 .siniestros-container h2{
@@ -423,6 +424,7 @@ h5 {
     font-size: 20px;
     text-align: left;
     padding-left:  15px;
+    width: 100%;
 }
 .siniestros-descripcion i{
     color: #fcaf3d;
@@ -431,9 +433,8 @@ h5 {
 
 .siniestros-descripcion{
     color: #EFF1F6;
-    font-size:15px;
+    font-size:17px;
     text-align: left;
-    margin-top: 30px;
     padding: 15px;
     text-align: justify;
 }
@@ -447,6 +448,7 @@ h5 {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
+    margin-top: 15px;
 }
 
 .siniestros-button .btn button:hover{
@@ -568,7 +570,6 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -30px;
 }
 
 .register-section div {
@@ -582,18 +583,21 @@ h5 {
     height: 70px;
     border-radius: 7px;
     margin: 5px;
+    padding: 15px;
 }
 
 .register-section .register-button{
+    font-weight: 600;
+    color: white;
+    padding: 9px 25px;
+    background: #fcaf3d;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
     width: 100%;
     height: 70px;
-    border-radius: 7px;
-    background-color: #fcaf3d;
-    font-size: 25px;
-    font-weight: 400;
-    border-color: #fcaf3d;
-    transition: all 0.3s;
-    color: white
+    font-size: 23px;
 }
 
 .register-section .register-button:hover{
@@ -662,7 +666,6 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -30px;
 }
 
 .login-section div {
@@ -676,18 +679,21 @@ h5 {
     height: 70px;
     border-radius: 7px;
     margin: 5px;
+    padding: 15px;
 }
 
 .login-section .login-button{
+    font-weight: 600;
+    color: white;
+    padding: 9px 25px;
+    background: #fcaf3d;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
     width: 100%;
     height: 70px;
-    border-radius: 7px;
-    background-color: #fcaf3d;
-    font-size: 25px;
-    font-weight: 400;
-    border-color: #fcaf3d;
-    transition: all 0.3s;
-    color: white;
+    font-size: 23px;
     margin-top: 5px;
 }
 
@@ -863,30 +869,32 @@ h5 {
 /*--- ESTILOS PARA EL DETAIL PRODUCT ---*/
 
 .product-edit{
-    background: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(255,176,58,1) 0%, rgba(53,141,159,1) 100%);
+    /* background: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(255,176,58,1) 0%, rgba(53,141,159,1) 100%); */
+    background-color: transparent;
+}
+
+.product-detail-section .section-title {
+    margin-left: 25px;
 }
 
 .product-detail-section h2{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
-    color: #EFF1F6 ;
+    color: black ;
     margin: auto;
-    text-align: center;
+    text-align: left;
     margin-bottom: 25px;
     margin-top: 25px;
 }
 
 .product-detail-form{
-    background-color: #EFF1F6;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    border: 5px solid #fcaf3d;
-    width: 70%;
+    border: 2px solid #007DFF;
+    width: 85%;
     margin: auto;
     padding: 20px;
-    border-radius: 7px;
-    max-width: 700px;
-    margin-bottom: 30px;
 }
 
 .product-detail-form div h3{
@@ -902,7 +910,7 @@ h5 {
 .product-detail-form .card {
     margin: auto;
     box-shadow: 0px 1px 10px rgba (0,0,0,0.2);
-    background: #fcb03d;
+    background: transparent;
     border-radius: 6px;
     overflow: hidden;
     cursor: default;
@@ -911,6 +919,7 @@ h5 {
     max-width: 300px;
     max-height: 140px;
     padding-bottom: 20px;
+    border: none;
 }
 
 .product-detail-form .card .card-info{
@@ -922,53 +931,58 @@ h5 {
     background: #007DFF;
 }
 .product-detail-form .card i{
-    color: #fff;
+    color: #fcaf3e;
     font-size: 30px;
     margin-top: 30px;
 }
 
 .product-detail-form .card h3{
     font-size: 20px;
-    color: #fff;
+    color: #fcaf3e;
     margin: auto;
 }
 
 .product-detail-inline{
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     align-items: center;
     text-align: center;
 }
 
 .product-detail-inline h4{
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     display: inline;
     line-height: 50px;
-  
+    text-transform: uppercase; 
 }
 
 .product-detail-inline h5{
-    font-size: 18;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 400;
     display: inline;
     color: #007DFF;
-    
+    text-transform: uppercase; 
+    padding-left: 5px
 }
 
 .product-detail-form .product-detail-description{
-    border: 1px solid #fcaf3d;
-    padding: 10px;
-    text-align: center;
-    background-color: #fcaf3d;
-    border-radius: 6px;
-    box-shadow: 0px 1px 10px rgba (0,0,0,0.2);
+    /* border: 1px solid #fcaf3d; */
+    padding: 20px;
+    text-align: justify;
+    /* background-color: #fcaf3d; */
+    /* border-radius: 6px; */
+    /* box-shadow: 0px 1px 10px rgba (0,0,0,0.2); */
 }
 
 .product-detail-form .product-detail-description p{
-    font-size: 18px;
-    font-weight: 500;
-    color: #f7f7f7;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    min-height: 200px;
+}
 
+.product-detail-buttons {
+    text-align: center;
 }
 
 .product-detail-buttons{
@@ -1226,5 +1240,22 @@ h5 {
     justify-content: center;
     background-color:  #000e29;
     padding: 10px;
+}
+
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.product-col{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
 }
 

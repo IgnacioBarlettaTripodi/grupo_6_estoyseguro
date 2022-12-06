@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head', {title: 'Formulario de creación' }) %>
+
+    <body class="product-edit">
+        <%- include('./partials/header') %>
+            <section class="product-detail-section">
+                <div class="section-title">
+                    <h2>Seguros</h2>
+                </div>
+                <div class="row">
+                    <% products.forEach(product=> { %>
+                        <div class="product-col">
+                            <div class="product-detail-form">
+                                <div>
+                                    <h3 class="card-title">
+                                        <%= product.name %>
+                                    </h3>
+                                </div>
+                                <div class="product-detail-inline">
+                                    <h4>Categoria:</h4>
+                                    <h5 class="product-detail-category">
+                                        <%= product.category %>
+                                    </h5>
+                                    <h4>Precio:</h4>
+                                    <h5 class="product-detail-price"> $<%= product.price %> / MES </h5>
+                                </div>
+                                <div class="product-detail-description">
+                                    <p>
+                                        <%= product.description %>
+                                    </p>
+                                </div>
+                                <div class="product-detail-buttons">
+                                    <a href="/products/edit/<%= product.id %>" class="btn"><button>Editar</button></a>
+                                    <a href="/login" class="btn"><button>Eliminar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <% }) %>
+                </div>
+            </section>
+    </body>
+
+</html>
