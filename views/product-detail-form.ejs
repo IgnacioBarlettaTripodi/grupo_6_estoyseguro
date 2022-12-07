@@ -28,8 +28,8 @@
                 <p><%= product.description %> </p>
             </div>
             <div class="product-detail-buttons">
-                <a href="/register" class="btn"><button>Editar</button></a>
-                <a href="/login" class="btn"><button>Eliminar</button></a>
+                <a href="/products/edit/<%= product.id %>" class="btn"><button>Editar</button></a>
+                <a href="/products/<%= product.id %>/?_method=delete" class="btn"><button>Eliminar</button></a>
             </div>
 		</div>
 	</section>
