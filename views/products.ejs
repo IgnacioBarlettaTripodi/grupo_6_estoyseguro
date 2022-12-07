@@ -6,7 +6,7 @@
         <%- include('./partials/header') %>
             <section class="product-detail-section">
                 <div class="section-title">
-                    <h2>Seguros</h2>
+                    <h2>Seguros </h2>
                 </div>
                 <div class="row">
                     <% products.forEach(product=> { %>
@@ -31,10 +31,11 @@
                                     </p>
                                 </div>
                                 <div class="product-detail-buttons">
+                                    <a href="/products/detail/<%= product.id %>" class="btn"><button>Ver detalle</button></a>
                                     <a href="/products/edit/<%= product.id %>" class="btn"><button>Editar</button></a>
                                     <!-- <a href="/products/<%= product.id %>/?_method=delete" class="btn"><button>Eliminar</button></a> -->
-                                    <form action="/products/<%= product.id %>/?_method=delete" method="POST">
-                                        <button type="submit" class="btn">Eliminar</button>
+                                    <form action="/products/<%= product.id %>/?_method=delete" method="POST" class="btn">
+                                        <button type="submit">Eliminar</button>
                                     </form>
                                 </div>
                             </div>

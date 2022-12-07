@@ -6,7 +6,7 @@
 	<%- include('./partials/header') %>
 	<section class="product-detail-section" >
 		<div>				
-			<h2>Edita tus seguros</h2>
+			<h2>Seguros</h2>
 		</div>
 		<div class="product-detail-form">
             <div>
@@ -23,13 +23,14 @@
             <div class="product-detail-inline">
             <h4>Categoria:</h4><h5> <%= product.category %> </h5>
             <h4>Precio:</h4><h5> $<%= product.price %> / MES </h5>
+            <h4>Duracion:</h4><h5> <%= product.duration %></h5>
             </div>
             <div class="product-detail-description">
                 <p><%= product.description %> </p>
             </div>
             <div class="product-detail-buttons">
                 <a href="/products/edit/<%= product.id %>" class="btn"><button>Editar</button></a>
-                <form action="/products/<%= product.id %>/?_method=delete" method="POST">
+                <form action="/products/<%= product.id %>/?_method=delete" method="POST" class="btn">
                     <button type="submit" class="btn">Eliminar</button>
                 </form>
             </div>

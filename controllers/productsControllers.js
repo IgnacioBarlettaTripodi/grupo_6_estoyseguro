@@ -10,6 +10,12 @@ let productsControllers = {
     products: (req,res) => {
         res.render('products',{products})
     },
+    filter:(req,res)=> {
+        let type = req.params.type
+        let newProducts = products.filter(product => type == product.type)
+
+        res.render('products',{products: newProducts})
+    },
     detail: (req,res) => {
         let product = products.find(product=>product.id == req.params.id)
         res.render('product-detail-form', {product: product})
@@ -22,6 +28,7 @@ let productsControllers = {
 
         let newProduct = {
             'id': products[products.length-1].id +1,
+            'type':req.body.type,
             'name': req.body.name,
             'price': req.body.price,
             'duration': req.body.duration,
@@ -33,7 +40,7 @@ let productsControllers = {
 
         fs.writeFileSync(productsFilePath, JSON.stringify(products,null,'\t'))
 
-        res.redirect('/')
+        res.render('products', {products})
     },
     edit: (req, res) => {
 		let product = products.find(product => product.id == req.params.id)
@@ -43,6 +50,7 @@ let productsControllers = {
         let productToEdit = products.find(product => product.id == req.params.id)
         let productEdited = {
 			'id': productToEdit.id,
+            'type': productToEdit.type,
 			'name': req.body.name,
 			'price': req.body.price,
 			'duration': req.body.duration,

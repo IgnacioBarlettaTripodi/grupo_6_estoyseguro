@@ -6,6 +6,8 @@ let productsControllers = require('../controllers/productsControllers')
 
 // OBTENER TODOS LOS PRODUCTOS
 router.get('/', productsControllers.products)
+// OBTENER TODOS LOS PRODUCTOS FILTRADOS POR TIPO DE SEGURO
+router.get('/filter/:type', productsControllers.filter)
 
 // OBTENER EL DETALLE DE UN PRODUCTOS
 router.get('/detail/:id', productsControllers.detail)

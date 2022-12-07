@@ -12,12 +12,26 @@
 			<form action="/products/create/" method="POST">
 				<div>
 					<div>
+						<label for="type">Tipo</label>
+						<select name="type" id="type" class="select-css">
+							<option value="">Elegí</option>
+							<option value="automoviles">Automoviles</option>
+							<option value="seguros-de-vida">Seguros de Vida </option>
+							<option value="riesgo-civil">Riesgo Civil</option>
+							<option value="riesgo-de-trabajo">Riesgo de Trabajo</option>
+							<option value="incendio">Incendio</option>
+							<option value="tecnologia">Tecnologia</option>
+							<option value="riesgo-cibernetico">Riesgo Cibernetico</option>
+							<option value="cauciones">Cauciones</option>
+						</select>
+					</div>
+					<div>
 						<label for="name">Nombre del producto:</label>
 						<input type="text" id="name" name="name" placeholder="Ej: Seguro para automoviles General">
 					</div>
 					<div>
 						<label for="price">Precio del producto:</label>
-						<input type="text" id="price" name="price" placeholder="Ej: 5678">
+						<input type="number" id="price" name="price" placeholder="Ej: 5678">
 					</div>
 					<div>
 						<label for="duration">Duracion:</label>
@@ -35,8 +49,8 @@
 						<label for="category">Categoría:</label>
 						<select name="category" id="category" class="select-css">
 							<option value="">Elegí</option>
-							<option value="automoviles">Oro</option>
-							<option value="visited">Platino </option>
+							<option value="gold">Oro</option>
+							<option value="platinum">Platino </option>
 						</select>
 					</div>
 					<div class="file-select">
