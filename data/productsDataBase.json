@@ -14,25 +14,88 @@
 		"price": 25000,
 		"category": "PLATINO",
 		"description": "Con esta cobertura los daños de tu vehículo están cubiertos sin importar tu responsabilidad en el choque. El pago de la franquicia estará a cargo del asegurado ",
-		"monto": "15000000",
+		"monto": 15000000,
 		"icono": "fa-solid fa-car"
 	},
     {
 		"id": 3,
 		"name": "SEGURO DE AUTOMOVIL",
-		"price": 16000,
+		"price": 30000,
+		"category": "ZAFIRO",
+		"description": "Incluimos asistencia las 24 horas, en cualquier parte del mundo",
+		"monto": 20000000,
+		"icono": "fa-solid fa-car"
+	},
+    {
+		"id": 4,
+		"name": "SEGURO DE MOTOVEHICULO",
+		"price": 8000,
 		"category": "ORO",
 		"description": "La presente cobertura constituye un seguro de responsabilidad civil, más conocido como seguro contra terceros y es el que te brinda cobertura frente a daños físicos y materiales ocasionados a otras personas, transportadas o no, como consecuencia de un accidente de tránsito ",
 		"monto": 1000000,
 		"icono": "fa-solid fa-car"
 	},
-    {
-		"id": 4,
-		"name": "SEGURO DE AUTOMOVIL",
+	{
+		"id": 5,
+		"name": "SEGURO DE MOTOVEHICULO",
 		"price": 16000,
-		"category": "ORO",
-		"description": "La presente cobertura constituye un seguro de responsabilidad civil, más conocido como seguro contra terceros y es el que te brinda cobertura frente a daños físicos y materiales ocasionados a otras personas, transportadas o no, como consecuencia de un accidente de tránsito ",
+		"category": "ZAFIRO",
+		"description":"Con esta cobertura los daños de tu vehículo están cubiertos sin importar tu responsabilidad en el choque. El pago de la franquicia estará a cargo del asegurado ",
 		"monto": 1000000,
 		"icono": "fa-solid fa-car"
+	},
+	{
+		"id": 6,
+		"name": "SEGURO DE MOTOVEHICULO",
+		"price": 20000,
+		"category": "PLATINO",
+		"description": "Incluimos asistencia las 24 horas, en cualquier parte del mundo",
+		"monto": 1000000,
+		"icono": "fa-solid fa-car"
+	},
+	{
+		"id": 7,
+		"name": "SEGURO DE EMBARCACIONES",
+		"price": 17000,
+		"category": "PLATINO",
+		"description": "Cobertura de daños materiales totales y parciales en aguas, incluyendo los gastos de salvamento y los daños por temporal.",
+		"monto": 1000000,
+		"icono": "fa-solid fa-car"
+	},
+	{
+		"id": 8,
+		"name": "SEGURO DE EMBARCACIONES",
+		"price": 20000,
+		"category": "PLATINO",
+		"description": "Añadimos coberturas de Responsabilidad Civil ampliadas, incluyendo daños a personas, a cosas, práctica de deportes acuáticos y contaminación súbita",
+		"monto": 1500000,
+		"icono": "fa-solid fa-car"
+	},
+	{
+		"id": 9,
+		"name": "SEGURO DE EMBARCACIONES",
+		"price": 25000,
+		"category": "PLATINO",
+		"description": "¿Te preocupan los ocupantes? En el plan más completo incluimos coberturas de accidentes personales para las personas a bordo, de gastos médicos y de efectos personales.",
+		"monto": 20000000,
+		"icono": "fa-solid fa-car"
+	},
+	{
+		"id": 10,
+		"name": "SEGURO CONTRA INCENDIOS",
+		"price": 13000,
+		"category": "ORO",
+		"description": "Este seguro cubrira todo bien mueble e inmueble de cualquier tipo que sea propiedad del asegurado y/o de terceros (siempre y cuando estos últimos estén declarados en póliza). Los riesgos cubiertos seran amparados ante daños materiales causados a los bienes objeto del seguro por la acción directa o indirecta del fuego, rayo o explosión, entendiéndose por fuego toda combustión que origine incendio o principio de incendio.",
+		"monto": 1000000,
+		"icono": "fa-solid fa-fire"
+	},
+	{
+		"id": 11,
+		"name": "SEGURO CONTRA INCENDIOS",
+		"price": 15000,
+		"category": "ZAFIRO",
+		"description": "Incluye a su vez las siguientes coberturas a tu seguro de incendio: Huracán, ciclón y tornado; Granizo; Terremoto; Combustión espontánea; Remoción de escombros; Gastos de limpieza; Daños por agua",
+		"monto": 1000000,
+		"icono": "fa-solid fa-fire"
 	}
 ]
