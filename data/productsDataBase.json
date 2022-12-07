@@ -1,14 +1,13 @@
 [
 	{
 		"id": 1,
-		"name": "SEGURO DE AUTOMOVIL",
-		"price": 16000,
-		"category": "ORO",
-		"description": "La presente cobertura constituye un seguro de responsabilidad civil, más conocido como seguro contra terceros y es el que te brinda cobertura frente a daños físicos y materiales ocasionados a otras personas, transportadas o no, como consecuencia de un accidente de tránsito ",
-		"monto": 1000000,
-		"icono": "fa-solid fa-car"
+		"name": "SEGURO DE AUTOMOVIL  ",
+		"price": "160000",
+		"duration": "4 anos",
+		"category": "",
+		"description": "La presente cobertura constituye un seguro de responsabilidad civil, más conocido como seguro contra terceros y es el que te brinda cobertura frente a daños físicos y materiales ocasionados a otras personas, transportadas o no, como consecuencia de un accidente de tránsito   "
 	},
-    {
+	{
 		"id": 2,
 		"name": "SEGURO DE AUTOMOVIL",
 		"price": 25000,
@@ -17,7 +16,7 @@
 		"monto": 15000000,
 		"icono": "fa-solid fa-car"
 	},
-    {
+	{
 		"id": 3,
 		"name": "SEGURO DE AUTOMOVIL",
 		"price": 30000,
@@ -35,9 +34,9 @@
 		"monto": 1000000,
 		"icono": "fa-solid fa-car"
 	},
-	{
-		"id": 5,
-		"name": "SEGURO DE MOTOVEHICULO",
+    {
+		"id": 4,
+		"name": "SEGURO DE AUTOMOVIL",
 		"price": 16000,
 		"category": "ZAFIRO",
 		"description":"Con esta cobertura los daños de tu vehículo están cubiertos sin importar tu responsabilidad en el choque. El pago de la franquicia estará a cargo del asegurado ",
