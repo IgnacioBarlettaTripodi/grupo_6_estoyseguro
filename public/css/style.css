@@ -984,7 +984,10 @@ h5 {
 .product-detail-buttons {
     text-align: center;
 }
-   
+
+.product-detail-buttons{
+    text-align: center;
+}
 
 .product-detail-buttons .btn button {
     display: inline;
