@@ -286,11 +286,13 @@ h5 {
 
 .iconos-tarjetas {
     text-align: center;
-    margin: 10px
+    margin: 20px auto;
+    width: 80%;
 }
 
 .iconos-tarjetas i {
-    color: white;
+    color: #007DFF;
+    font-size: 40px;
 }
 
 .descripciones {
@@ -300,11 +302,12 @@ h5 {
 
 /*--- ESTILOS PARA EL SLIDER DEL HOME ---*/
 
-.container {
-    width: 100%;
+.slider-container {
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 .swiper{
     width: 100%;
@@ -319,8 +322,7 @@ h5 {
 .container-card {
     display: flex;
     flex-direction: column;
-    width:90%;
-    max-width:700px;
+    width:80%;
     justify-content: center;
     text-align: center;
     margin: auto;
@@ -363,7 +365,7 @@ h5 {
         justify-content: center;
         text-align: center;
         margin: auto;
-        width: 400%;
+        width: 75%;
     }
     }
 
@@ -376,10 +378,9 @@ h5 {
         grid-column-gap: 25px;
         grid-row-gap: 15px;
         justify-content: center;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        max-width: 80%;
+        text-align: center; 
+        margin: auto;
+        width: 75%;
     }
 }
 
