@@ -975,9 +975,24 @@ h5 {
     background-color: transparent;
 }
 
+.product-detail-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    max-width: 100%;
+}
+
+.product-col{
+    width: 100%;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
 .product-detail-section .section-title {
     margin-left: 25px;
 }
+
 
 .product-detail-section h2{
     font-size: 35px;
@@ -1018,8 +1033,8 @@ h5 {
     cursor: default;
     transition: all 400ms ease;
     text-align: center;
-    max-width: 300px;
-    max-height: 140px;
+    max-width: 600px;
+    max-height: 600px;
     padding-bottom: 20px;
     border: none;
 }
@@ -1106,6 +1121,37 @@ h5 {
 .product-detail-buttons .btn button:hover{
     color: #fcaf3d;
     transform: scale(1.1)
+}
+
+@media (min-width: 1024px) {  
+        
+    /* .product-detail-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    justify-content: center;
+    text-align: center; 
+    margin: 0px;
+    width: 100%;
+} */
+
+.product-detail-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content:left;
+    margin: auto;
+    
+}
+
+.product-col{
+    width: 100%;
+    height: 100%;
+    margin: 15px;
+}
 }
 
 /*--- ESTILOS PARA EL FOOTER ---*/
@@ -1309,7 +1355,7 @@ h5 {
 
 
 /*--- ESTILOS PARA EL CARRITO DE COMPRAS  ---*/
-
+/* 
 .carrito-filtros {
     display: flex;
     justify-content: space-between;
@@ -1360,4 +1406,4 @@ h5 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-
+ */
