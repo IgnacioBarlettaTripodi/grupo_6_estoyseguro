@@ -353,6 +353,7 @@ h5 {
 .card:hover {
     box-shadow: 5px 5px 20px rgba (1,1,1,0.4);
     background: #007DFF;
+    text-decoration: none;
 }
 .card i{
     color: #fff;
@@ -467,102 +468,6 @@ h5 {
     transform: scale(1.1)
 }
 
-
-/*--- ESTILOS DEL PRODUCT DETAIL--*/
-.container-products-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.image-row img{
-    width: 100%;
-    min-height: 200px;
-}
-
-.product-description .product-row1{
-    display: flex;
-    justify-content: center;
-    align-items: flex;
-    flex-direction: column;
-    width: 90%;
-}
-
-@media (min-width: 768px) {
-    .product-description .product-row1{
-        display: flex;
-        justify-content: center;
-        align-items: flex;
-        flex-direction: row;
-        width: 90%;
-    }
-    .product-description .product-row1 .detail{
-        width: 33%;
-    }
-}
-
-.product-row1 .detail h2{
-    color:#fcaf3d;
-    font-size: 25px;
-    line-height: 40px;
-    margin-left: 40px
-}
-
-.product-row1 .detail h4{
-    color:#0a1a2a;
-    font-size: 15px;
-    line-height: 40px;
-    margin-left: 40px;
-
-}
-.product-row2{
-    background-color: rgb(245, 244, 244);
-
-}
-
-.product-row2 .detail h3{
-    color:#fcaf3d;
-    font-size: 25px;
-    font-weight:900;
-    line-height: 40px;
-    margin-left: 40px
-}
-
-.product-row2 .detail h4{
-    color:#000e29;
-    font-size: 13px;
-    line-height: 40px;
-    margin-left: 40px;
-
-}
-.product-row3{
-    background-color:#fcaf3d;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-}
-
-.product-row3 h3{
-    color:#fff;
-    font-size: 25px;
-    line-height: 40px;
-    margin-left: 40px
-}
-
-.product-row3 h4{
-    color:#fff;
-    font-size: 15px;
-    line-height: 40px;
-    margin-left: 40px;
-}
-
-.product-row3 button{
-    text-align: center;
-    margin-left: 50%;
-    margin-right: 50%;
-}
 
 /*--- ESTILOS DEL FORMULARIO DE REGISTRO ---*/
 .body-register .header{
@@ -993,6 +898,9 @@ h5 {
     margin-left: 25px;
 }
 
+.product-detail-title{
+    height: 100px;
+}
 
 .product-detail-section h2{
     font-size: 35px;
@@ -1012,6 +920,7 @@ h5 {
     width: 85%;
     margin: auto;
     padding: 20px;
+
 }
 
 .product-detail-form div h3{
@@ -1063,6 +972,7 @@ h5 {
     margin: 20px 0 0 0;
     align-items: center;
     text-align: center;
+    height: 100px;
 }
 
 .product-detail-inline h4{
@@ -1083,12 +993,11 @@ h5 {
 }
 
 .product-detail-form .product-detail-description{
-    /* border: 1px solid #fcaf3d; */
+
     padding: 20px;
     text-align: justify;
-    /* background-color: #fcaf3d; */
-    /* border-radius: 6px; */
-    /* box-shadow: 0px 1px 10px rgba (0,0,0,0.2); */
+    height: 250px;
+  
 }
 
 .product-detail-form .product-detail-description p{
@@ -1104,6 +1013,7 @@ h5 {
 
 .product-detail-buttons{
     text-align: center;
+    height: 100px;
 }
 
 .product-detail-buttons .btn button {
@@ -1123,19 +1033,6 @@ h5 {
     transform: scale(1.1)
 }
 
-@media (min-width: 1024px) {  
-        
-    /* .product-detail-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 50%);
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-    justify-content: center;
-    text-align: center; 
-    margin: 0px;
-    width: 100%;
-} */
 
 .product-detail-wrapper{
     display: flex;
@@ -1151,7 +1048,6 @@ h5 {
     width: 100%;
     height: 100%;
     margin: 15px;
-}
 }
 
 /*--- ESTILOS PARA EL FOOTER ---*/
@@ -1310,16 +1206,16 @@ h5 {
         text-align: left;
     }
 }
-    @media (min-width: 1024px) {  
+    /* @media (min-width: 1024px) {  
         
     .pie-pagina .grupo-1{
         display: flex;
         flex-direction: row;
         width: 100%; 
         }
-    }
+    } */
 
-    @media (min-width: 1440px) {  
+    @media (min-width: 1024px) {  
 
         .pie-pagina .grupo-1 .box h2{
             font-size: 26px;
