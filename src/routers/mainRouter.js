@@ -5,11 +5,7 @@ let mainControllers = require('../controllers/mainControllers')
 
 router.get('/', mainControllers.home)
 
-router.get('/login', mainControllers.login)
 
-router.get('/register', mainControllers.register)
-
-router.post('/register', mainControllers.processRegister) // Esta todavia no hace nada
 
 
 

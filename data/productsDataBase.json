@@ -30,7 +30,7 @@
 		"monto": 20000000,
 		"icono": "fa-solid fa-car"
 	},
-    {
+	{
 		"id": 4,
 		"type": "automovil",
 		"name": "SEGURO DE MOTOVEHICULO",
@@ -40,7 +40,7 @@
 		"monto": 1000000,
 		"icono": "fa-solid fa-car"
 	},
-    {
+	{
 		"id": 4,
 		"type": "seguros-de-vida",
 		"name": "SEGURO DE VIDA",
@@ -66,7 +66,7 @@
 		"name": "SEGURO DE VIDA",
 		"price": 16000,
 		"category": "ZAFIRO",
-		"description":"Con esta cobertura los daños de tu vehículo están cubiertos sin importar tu responsabilidad en el choque. El pago de la franquicia estará a cargo del asegurado ",
+		"description": "Con esta cobertura los daños de tu vehículo están cubiertos sin importar tu responsabilidad en el choque. El pago de la franquicia estará a cargo del asegurado ",
 		"monto": 1000000,
 		"icono": "fa-solid fa-car"
 	},
@@ -129,5 +129,14 @@
 		"description": "Incluye a su vez las siguientes coberturas a tu seguro de incendio: Huracán, ciclón y tornado; Granizo; Terremoto; Combustión espontánea; Remoción de escombros; Gastos de limpieza; Daños por agua",
 		"monto": 1000000,
 		"icono": "fa-solid fa-fire"
+	},
+	{
+		"id": 12,
+		"type": "riesgo-cibernetico",
+		"name": "Base: Responsabilid Civil",
+		"price": "15000",
+		"duration": "5 años",
+		"category": "gold",
+		"description": "Este es un seguro que cubre todo lo relacionado a la seguridad de los datos almacenados en la nube"
 	}
 ]

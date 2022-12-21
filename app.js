@@ -3,8 +3,9 @@ const app = express();
 const path = require('path');
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 
-const mainRouter = require('./routers/mainRouter');
-const productsRouter = require('./routers/productsRouter')
+const mainRouter = require('./src/routers/mainRouter');
+const productsRouter = require('./src/routers/productsRouter')
+const userRouter = require('./src/routers/userRouter')
 
 
 app.listen (3000, ()=>{
@@ -18,8 +19,10 @@ app.use(express.json());
 
 
 app.set('view engine', 'ejs')
+app.set('views', './src/views'); // Seteo de la ubicación de la carpeta "views"
 
 app.use('/', mainRouter)
 app.use('/products', productsRouter)
+app.use('/user', userRouter)
 
 

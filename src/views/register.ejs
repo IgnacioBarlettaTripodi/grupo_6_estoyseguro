@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+
+    <body>
+        <!-- SECCION PRINCIPAL -->
+        <%- include('./partials/header') %>
+
+            <body>
+                <section class="register-section">
+                    <div>
+                        <h3>Ingresa tus datos</h3>
+                    </div>
+                    <form action="/user/register" method="POST" enctype="multipart/form-data">
+                        <div class="register-form">
+                            <input type="text" name="name" placeholder="Nombre y Apellido o Razón Social" <% if (locals.oldData) { %> value="<%= oldData.name %>"  <% } %>>
+                            <% if (locals.errors && errors.name) { %>
+                                <div class="error-in-form">
+                                    <%= errors.name.msg %>
+                                </div>
+                                <% } %>
+                                    <input type="number" name="tax" placeholder="CUIT o DNI" <% if (locals.oldData) { %> value="<%= oldData.tax %>"  <% } %>>
+                                    <% if (locals.errors && errors.tax) { %>
+                                        <div>
+                                            <%= errors.tax.msg %>
+                                        </div>
+                                        <% } %>
+                                            <input type="text" name="country" placeholder="País" <% if (locals.oldData) { %> value="<%= oldData.country %>"  <% } %>>
+                                            <% if (locals.errors && errors.country) { %>
+                                                <div>
+                                                    <%= errors.country.msg %>
+                                                </div>
+                                                <% } %>
+                                                    <input type="number" name="phone" placeholder="Teléfono" <% if (locals.oldData) { %> value="<%= oldData.phone %>"  <% } %>>
+                                                    <% if (locals.errors && errors.phone) { %>
+                                                        <div>
+                                                            <%= errors.phone.msg %>
+                                                        </div>
+                                                        <% } %>
+                                                            <input type="email" name="email" placeholder="Correo electrónico" <% if (locals.oldData) { %> value="<%= oldData.email %>"  <% } %>>
+                                                            <% if (locals.errors && errors.email) { %>
+                                                                <div>
+                                                                    <%= errors.email.msg %>
+                                                                </div>
+                                                                <% } %>
+                                                                    <input type="password" name="password" placeholder="Clave de usuario" <% if (locals.oldData) { %> value="<%= oldData.password %>"  <% } %>>
+                                                                    <% if (locals.errors && errors.password) { %>
+                                                                        <div>
+                                                                            <%= errors.password.msg %>
+                                                                        </div>
+                                                                        <% } %>
+                        </div>
+                        <div>
+                            <label for="avatar"> Imagen de Perfil </label>
+                            <input type="file" name="avatar" id="avatar">
+                            <% if (locals.errors && errors.avatar) { %>
+                                <div>
+                                    <%= errors.avatar.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="term&conditions" value="Acepta términos y condiciones">
+                            <p> Acepta términos y condiciones</p>
+                        </div>
+                        <div>
+                            <button id="button" type="submit" class="register-button">Registrarme</button>
+                        </div>
+                    </form>
+                </section>
+            </body>
+
+</html>
