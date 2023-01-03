@@ -10,52 +10,13 @@
 	},
 	{
 		"id": 2,
-		"name": "Manuel Gordon",
-		"tax": "32423432423423",
+		"name": "Ramiro Gordon",
+		"tax": "39484861",
 		"country": "Argentina",
 		"phone": "02215041950",
 		"email": "manuelgordon25@gmail.com",
-		"password": "23423423432423423432",
-		"avatar": "avatar-1671477967542.jpg"
-	},
-	{
-		"id": 3,
-		"name": "Manuel Gordon",
-		"tax": "32423423",
-		"country": "Argentina",
-		"phone": "02215041950",
-		"email": "manuelgordon25@gmail.com",
-		"password": "$2a$10$Nig6m7htg4h3bYIzEHNG8e.rmJIgh3h7p5MSfb37i7VI2j/kLd/IC",
-		"avatar": "avatar-1671478807092.jpg"
-	},
-	{
-		"id": 4,
-		"name": "Manuel Gordon",
-		"tax": "23423423432423",
-		"country": "Argentina",
-		"phone": "02215041950",
-		"email": "manuelgordon25@gmail.net",
-		"password": "$2a$10$cg4mphNhOQCgNRu4HAe1P.zUTZRkfVSFYoKLYJHfh6Vt0U9xKJf9C",
-		"avatar": "avatar-1671479386353.jpg"
-	},
-	{
-		"id": 5,
-		"name": "Manuel Gordon",
-		"tax": "23423423432423",
-		"country": "Argentina",
-		"phone": "02215041950",
-		"email": "manuelgordon25@dh.com",
-		"password": "$2a$10$6pIQVl9DtXNjoxq1jSsG/.wuoAICYlgq6iE15uyGxFVmnygL06Fuu",
-		"avatar": "avatar-1671479505237.jpg"
-	},
-	{
-		"id": 6,
-		"name": "Manuel Gordon",
-		"tax": "23423423432423",
-		"country": "Argentina",
-		"phone": "02215041950",
-		"email": "manuelgordon25@dh.com.ar",
-		"password": "$2a$10$L49ZU2okEmOZIk1z8kTzWux3C0waCFVK5/Ffx0/rDgtf4Pa5955Xq",
-		"avatar": "avatar-1671479522947.jpg"
+		"password": "$2a$10$KtqN2t35PFo.mlLoUiQWoO/eJg4okZcyE77Gd/PuSzqj9/qMqRc..",
+		"term&conditions": "Acepta términos y condiciones",
+		"avatar": "avatar-1671634564165.jpg"
 	}
 ]

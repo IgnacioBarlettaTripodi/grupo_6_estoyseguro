@@ -12,10 +12,20 @@
             <form action="/user/login" method="post" class="login-form">
                 <input type="number" name="tax" placeholder="CUIT o DNI">
                 <input type="email" name="email" placeholder="Correo electrónico">
+                <% if (locals.errors && errors.email) { %>
+                    <div class="validation-error">
+                        <%= errors.email.msg %>
+                    </div>
+                <% } %>
                 <input type="password" name="password" placeholder="Clave de usuario">
+                <div>
+                    <input type="checkbox" name="recordar_usuario" value="recordar_usuario">
+                    <p> Recordar mi usuario</p>
+                </div>
                 <button id="button" type="submit" class="login-button">INGRESAR</button>
             </form>        
         </div>
+       
         <div>
             <h4><a href="">Olvidaste tu contraseña?</a></h4>
         </div>

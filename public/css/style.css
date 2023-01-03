@@ -80,6 +80,7 @@ nav {
     display: none;
 }
 
+
 @media(min-width:894px){
     .header .btn-links{
         flex-direction: row;
@@ -475,7 +476,17 @@ h5 {
 }
 
 .register-section{
-    background: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(255,176,58,1) 0%, rgba(53,141,159,1) 100%);
+    /* background: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(255,176,58,1) 0%, rgba(53,141,159,1) 100%); */
+
+}
+
+.register-section div.validation-error {
+    color: red;
+    text-align: left;
+    padding: 5px 0;
+    width: 40%;
+    font-size: 0.85rem;
+    margin: auto;
 }
 
 .register-section h3{
@@ -491,7 +502,7 @@ h5 {
 .register-section div {
     text-align: center;
     padding: 20px;
-    color: white;
+    color: black;
 }
 
 .register-form input{
@@ -571,7 +582,14 @@ h5 {
 }
 
 .login-section{
-    background: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(255,176,58,1) 0%, rgba(53,141,159,1) 100%);
+    /* background: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(255,176,58,1) 0%, rgba(53,141,159,1) 100%); */
+
+}
+
+.login-section h5 {
+    text-align: center;
+    padding: 10px;
+    color: black;
 }
 
 .login-section h3{
@@ -587,7 +605,7 @@ h5 {
 .login-section div {
     text-align: center;
     padding: 20px;
-    color: white;
+    color: black;
 }
 
 .login-form input{
@@ -621,7 +639,7 @@ h5 {
 
 .login-section h4 a{
     font-size: 18px;
-    color: white;
+    color: black;
     font-weight: 300;
     margin-top: -40px;
 }
@@ -642,7 +660,7 @@ h5 {
 
         .login-section a{
             font-size: 20px;
-            color: white;
+            color: black;
             font-weight: 300;
     }
 }

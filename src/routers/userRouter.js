@@ -1,6 +1,10 @@
 let express = require('express');
 let router = express.Router();
 
+const guestMiddleware = require('../middlewares/guestMiddleware')
+const authMiddleware = require('../middlewares/authMiddleware')
+
+
 const path = require('path')
 const multer = require('multer')
 
@@ -17,7 +21,8 @@ const storage = multer.diskStorage({
     }
 })
 const uploadFile = multer({ storage: storage })
-let userControllers = require('../controllers/userControllers')
+let userControllers = require('../controllers/userControllers');
+const { route } = require('express/lib/application');
 
 
 const validations = [
@@ -38,13 +43,22 @@ const validations = [
 ]
 
 // FORMULARIO DE LOGIN
-router.get('/login', userControllers.login)
+router.get('/login', guestMiddleware,userControllers.login)
+
+// PROCESAMIENTO DEL LOGIN
+router.post('/login', userControllers.processLogin)
+
+// PERFIL DEL USUARIO
+router.get('/userProfile',authMiddleware, userControllers.profile)
 
 // FORMULARIO DE REGISTRO
-router.get('/register', userControllers.register)
+router.get('/register', guestMiddleware, userControllers.register)
 
 // PROCESAMIENTO DEL FORMULARIO DE REGISTRO
 router.post('/register', uploadFile.single('avatar'), validations ,userControllers.processRegister)
+
+// LOGOUT
+router.get('/logout',userControllers.logout)
 
 
 module.exports = router

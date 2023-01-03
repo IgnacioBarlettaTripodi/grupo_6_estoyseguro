@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head', {title: 'Perfil del Usuario' }) %>
+
+    <body>
+        <%- include('./partials/header') %>
+
+            <div>
+                <h2>Hi <%= user.name %> </h2>
+                <img src="/images/avatars/<%= user.avatar %> ">
+            </div>
+
+    </body>
+
+</html>

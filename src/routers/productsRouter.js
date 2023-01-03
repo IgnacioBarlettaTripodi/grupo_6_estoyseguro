@@ -1,5 +1,6 @@
 let express = require('express');
 let router = express.Router();
+const authMiddleware = require('../middlewares/authMiddleware')
 
 let productsControllers = require('../controllers/productsControllers')
 
@@ -14,7 +15,7 @@ router.get('/detail/:id', productsControllers.detail)
 
 
 // CREAR UN PRODUCTO NUEVO 
-router.get('/create/', productsControllers.create)
+router.get('/create/', authMiddleware,productsControllers.create)
 router.post('/create', productsControllers.store)
 
 
